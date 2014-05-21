@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://feed.tellus.no/v2.4/default.asmx?wsdl" docRef="http://feed.tellus.no/v2.4/default.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://feed.tellus.no/v2.4/default.asmx" xmlns:q1="http://feed.tellus.no/v2.4" binding="q1:Tellus_x005F_x0020_Feed_x005F_x0020__x005F_x0026_copy_x005F_x003B__x005F_x0020_v2.4Soap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://feed.tellus.no/v2.4/default.asmx" xmlns:q2="http://feed.tellus.no/v2.4" binding="q2:Tellus_x005F_x0020_Feed_x005F_x0020__x005F_x0026_copy_x005F_x003B__x005F_x0020_v2.4Soap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

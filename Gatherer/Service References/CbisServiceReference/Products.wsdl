@@ -1,0 +1,2108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://api.cbis.citybreak.com/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://api.cbis.citybreak.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://api.cbis.citybreak.com/">
+      <s:element name="ListAll">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="categoryId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="templateId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageOffset" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="itemsPerPage" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="filter" type="tns:ProductFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProductFilter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ArenaIds" type="tns:ArrayOfInt" />
+          <s:element minOccurs="0" maxOccurs="1" name="GeoNodeIds" type="tns:ArrayOfInt" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="FreeText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Highlights" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrderBy" type="tns:OrderBy" />
+          <s:element minOccurs="1" maxOccurs="1" name="SortOrder" type="tns:SortOrder" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaxLatitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="MinLatitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaxLongitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="MinLongitude" nillable="true" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="InterestsIds" type="tns:ArrayOfInt" />
+          <s:element minOccurs="1" maxOccurs="1" name="SubCategoryId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductType" nillable="true" type="tns:ProductType" />
+          <s:element minOccurs="1" maxOccurs="1" name="WithOccasionsOnly" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="MultiAttributes" type="tns:ArrayOfMultiAttributeSearch" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExcludeProductsWithoutOccasions" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExcludeProductsNotInCurrentLanguage" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IncludeArchivedProducts" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IncludeInactiveProducts" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="BookableProductsFirst" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="RandomSortSeed" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExcludeProductsWhereNameNotInCurrentLanguage" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductIds" type="tns:ArrayOfInt" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="OrderBy">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Name" />
+          <s:enumeration value="Date" />
+          <s:enumeration value="Arena" />
+          <s:enumeration value="Area" />
+          <s:enumeration value="Interests" />
+          <s:enumeration value="Random" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="SortOrder">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Ascending" />
+          <s:enumeration value="Descending" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="ProductType">
+        <s:restriction base="s:string">
+          <s:enumeration value="All" />
+          <s:enumeration value="Product" />
+          <s:enumeration value="Arena" />
+          <s:enumeration value="Deprecated1" />
+          <s:enumeration value="SubProduct" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfMultiAttributeSearch">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MultiAttributeSearch" nillable="true" type="tns:MultiAttributeSearch" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MultiAttributeSearch">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AttributeId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MultiAttributeIds" type="tns:ArrayOfInt" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListAllResult" type="tns:SearchResultOfProduct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SearchResultOfProduct">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TotalResults" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalPages" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="PageIndex" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="PageSize" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="TrackingPixelUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Items" type="tns:ArrayOfProduct" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfProduct">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Product" nillable="true" type="tns:Product" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Product">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SystemName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TrackingPixelUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UrlName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ForeignProductId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CitybreakPackageId" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductReference" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrganizationId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Version" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TemplateId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Image" type="tns:MediaObject" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:ProductStatus" />
+          <s:element minOccurs="1" maxOccurs="1" name="PublishedDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="RevisionDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExpirationDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Relevance" type="tns:Relevance" />
+          <s:element minOccurs="1" maxOccurs="1" name="ParentProductId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductType" type="tns:ProductType" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsHighlight" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Attributes" type="tns:ArrayOfAttributeData" />
+          <s:element minOccurs="0" maxOccurs="1" name="Categories" type="tns:ArrayOfCategory" />
+          <s:element minOccurs="0" maxOccurs="1" name="GeoNode" type="tns:GeoNode" />
+          <s:element minOccurs="0" maxOccurs="1" name="Occasions" type="tns:ArrayOfOccasionObject" />
+          <s:element minOccurs="1" maxOccurs="1" name="SupplierId" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="POIs" type="tns:POIList" />
+          <s:element minOccurs="1" maxOccurs="1" name="Duration" nillable="true" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="ForeignProductIds" type="tns:ArrayOfInt" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MediaObject">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="MediaId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MediaType" type="tns:MediaTypes" />
+          <s:element minOccurs="0" maxOccurs="1" name="Url" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Width" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Height" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Keywords" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProducedBy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CopyrightBy" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ImageType" type="tns:ImageTypes" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="MediaTypes">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Image" />
+          <s:enumeration value="SagaStream" />
+          <s:enumeration value="Youtube" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="ImageTypes">
+        <s:restriction base="s:string">
+          <s:enumeration value="Unknown" />
+          <s:enumeration value="Image" />
+          <s:enumeration value="Logo" />
+          <s:enumeration value="PlanDrawing" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="ProductStatus">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Active" />
+          <s:enumeration value="Inactive" />
+          <s:enumeration value="Draft" />
+          <s:enumeration value="WaitingForApproval" />
+          <s:enumeration value="Declined" />
+          <s:enumeration value="AutoApproved" />
+          <s:enumeration value="ManuallyApproved" />
+          <s:enumeration value="PendingPublish" />
+          <s:enumeration value="Archived" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="Relevance">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Local" />
+          <s:enumeration value="Regional" />
+          <s:enumeration value="National" />
+          <s:enumeration value="International" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfAttributeData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AttributeData" nillable="true" type="tns:AttributeData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AttributeData">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AttributeId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MetaType" type="tns:MetaType" />
+          <s:element minOccurs="0" maxOccurs="1" name="Value" type="tns:ValueBase" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrganizationId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Version" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Language" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="MetaType">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Int" />
+          <s:enumeration value="SmallInt" />
+          <s:enumeration value="Boolean" />
+          <s:enumeration value="String" />
+          <s:enumeration value="Double" />
+          <s:enumeration value="DateTime" />
+          <s:enumeration value="Object" />
+          <s:enumeration value="Occasions" />
+          <s:enumeration value="MultiAttribute" />
+          <s:enumeration value="PointOfInterests" />
+          <s:enumeration value="Media" />
+          <s:enumeration value="Contacts" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ValueBase" />
+      <s:complexType name="Value">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ValueBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Data" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Media">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ValueBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="MediaList" type="tns:ArrayOfMediaObject" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfMediaObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MediaObject" nillable="true" type="tns:MediaObject" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MultiAttribute">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ValueBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Values" type="tns:ArrayOfMultiAttributeObject" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfMultiAttributeObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MultiAttributeObject" nillable="true" type="tns:MultiAttributeObject" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MultiAttributeObject">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AttributeId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrganizationId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MultiAttributeId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MetaType" type="tns:MetaType" />
+          <s:element minOccurs="0" maxOccurs="1" name="Value" type="tns:ValueBase" />
+          <s:element minOccurs="1" maxOccurs="1" name="Language" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Occasion">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ValueBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Occasions" type="tns:ArrayOfOccasionObject" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfOccasionObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OccasionObject" nillable="true" type="tns:OccasionObject" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OccasionObject">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AttributeId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrganizationId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartTime" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndTime" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValidDays" type="tns:WeekDays" />
+          <s:element minOccurs="1" maxOccurs="1" name="ArenaId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArenaName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArenaImage" type="tns:MediaObject" />
+          <s:element minOccurs="1" maxOccurs="1" name="EntryTime" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="WeekDays">
+        <s:list>
+          <s:simpleType>
+            <s:restriction base="s:string">
+              <s:enumeration value="Monday" />
+              <s:enumeration value="Tuesday" />
+              <s:enumeration value="Wednesday" />
+              <s:enumeration value="Thursday" />
+              <s:enumeration value="Friday" />
+              <s:enumeration value="Saturday" />
+              <s:enumeration value="Sunday" />
+            </s:restriction>
+          </s:simpleType>
+        </s:list>
+      </s:simpleType>
+      <s:complexType name="ArrayOfCategory">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Category" nillable="true" type="tns:Category" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Category">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrganizationId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DefaultTemplateId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:CategoryStatus" />
+          <s:element minOccurs="1" maxOccurs="1" name="ParentCategoryId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DisplayOrder" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Icon" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="CategoryStatus">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Active" />
+          <s:enumeration value="Inactive" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="GeoNode">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ParentId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrgId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Type" type="tns:GeoNodeType" />
+          <s:element minOccurs="1" maxOccurs="1" name="LeftValue" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="RightValue" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CityCenterLatitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CityCenterLongitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CityCenterRadius" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="GeoNodeType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Undefined" />
+          <s:enumeration value="County" />
+          <s:enumeration value="Municipial" />
+          <s:enumeration value="InhabitedPlace" />
+          <s:enumeration value="Region" />
+          <s:enumeration value="State" />
+          <s:enumeration value="Province" />
+          <s:enumeration value="District" />
+          <s:enumeration value="Country" />
+          <s:enumeration value="SubRegion" />
+          <s:enumeration value="City" />
+          <s:enumeration value="Destination" />
+          <s:enumeration value="Area" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="POIList">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="POIs" type="tns:ArrayOfPOIObject" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfPOIObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="POIObject" nillable="true" type="tns:POIObject" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="POIObject">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Latitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Longitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Distance" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="PoiType" type="tns:POIType" />
+          <s:element minOccurs="1" maxOccurs="1" name="LinkedProductId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AttributeId" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="POIType">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Airport" />
+          <s:enumeration value="SubwayStation" />
+          <s:enumeration value="BusStation" />
+          <s:enumeration value="TrainStation" />
+          <s:enumeration value="Sight" />
+          <s:enumeration value="City" />
+          <s:enumeration value="Harbor" />
+          <s:enumeration value="Landmark" />
+          <s:enumeration value="CityCentre" />
+          <s:enumeration value="Attraction" />
+          <s:enumeration value="Shopping" />
+          <s:enumeration value="Ferry" />
+          <s:enumeration value="TouristInformation" />
+          <s:enumeration value="GolfCourse" />
+          <s:enumeration value="RaukArea" />
+          <s:enumeration value="Bathing" />
+          <s:enumeration value="ArenaOrMeetingPoint" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="ListAllWithImagesFirst">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="categoryId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="templateId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageOffset" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="itemsPerPage" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="filter" type="tns:ProductFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllWithImagesFirstResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListAllWithImagesFirstResult" type="tns:SearchResultOfProduct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductsByTemplate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="templateId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="categoryId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProductDigest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Attributes" type="tns:ArrayOfInformationData" />
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInformationData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="InformationData" nillable="true" type="tns:InformationData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InformationData">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AttributeId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MetaType" type="tns:MetaType" />
+          <s:element minOccurs="0" maxOccurs="1" name="Value" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MediaRef">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Keywords" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MediaType" type="tns:MediaTypes" />
+          <s:element minOccurs="1" maxOccurs="1" name="Width" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Height" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MediaUrl" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Dimension" type="tns:MediaDimensions" />
+          <s:element minOccurs="1" maxOccurs="1" name="ImageType" type="tns:ImageTypes" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="MediaDimensions">
+        <s:restriction base="s:string">
+          <s:enumeration value="Auto" />
+          <s:enumeration value="OneByOne" />
+          <s:enumeration value="OneByTwo" />
+          <s:enumeration value="TwoByOne" />
+          <s:enumeration value="FiveByOne" />
+          <s:enumeration value="EightByFive" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ProductAttribute">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="MultiAttributeId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MetaType" type="tns:MetaType" />
+          <s:element minOccurs="1" maxOccurs="1" name="Checked" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="AttributeId" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfProductAttribute">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductAttribute" nillable="true" type="tns:ProductAttribute" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfMediaRef">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MediaRef" nillable="true" type="tns:MediaRef" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfProductDigest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductDigest" nillable="true" type="tns:ProductDigest" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetProductsByTemplateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductsByTemplateResult" type="tns:ArrayOfProductDigest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WithIds">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ids" type="tns:ArrayOfInt" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageOffset" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="itemsPerPage" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WithIdsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WithIdsResult" type="tns:SearchResultOfProduct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListIds">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="categoryId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="filter" type="tns:ProductFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProductMapItem">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ProductId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CitybreakId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PackageId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Longitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Latitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductType" type="tns:ProductType" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfProductMapItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductMapItem" nillable="true" type="tns:ProductMapItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListIdsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListIdsResult" type="tns:ArrayOfProductMapItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListProductIdsLanguageInvariant">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListProductIdsLanguageInvariantResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListProductIdsLanguageInvariantResult" type="tns:ArrayOfProductMapItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListArenaIdsLanguageInvariant">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListArenaIdsLanguageInvariantResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListArenaIdsLanguageInvariantResult" type="tns:ArrayOfProductMapItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListIdsLanguageInvariant">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filter" type="tns:ProductFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListIdsLanguageInvariantResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListIdsLanguageInvariantResult" type="tns:ArrayOfProductMapItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUpdateInformation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProductUpdate">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ProductId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastUpdated" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfProductUpdate">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductUpdate" nillable="true" type="tns:ProductUpdate" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUpdateInformationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUpdateInformationResult" type="tns:ArrayOfProductUpdate" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubProductsByParentId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="parentProductId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubProductsByParentIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSubProductsByParentIdResult" type="tns:ArrayOfProduct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="productId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="templateId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByIdResult" type="tns:Product" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByForeignId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="citybreakId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="templateId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByForeignIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByForeignIdResult" type="tns:Product" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByProductReferences">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="productReferences" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetByProductReferencesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByProductReferencesResult" type="tns:ArrayOfProduct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByProductReferencesInChannel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="productReferences" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByProductReferencesInChannelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByProductReferencesInChannelResult" type="tns:ArrayOfProduct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParentProductByProductReference">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="productReference" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParentProductByProductReferenceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetParentProductByProductReferenceResult" type="tns:Product" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPointsOfInterest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPointsOfInterestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPointsOfInterestResult" type="tns:ArrayOfPOIObject" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByUrlName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="urlName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="templateId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByUrlNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByUrlNameResult" type="tns:Product" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGeoTree">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TreeOfGeoNode">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Nodes" type="tns:ArrayOfTreeNodeOfGeoNode" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTreeNodeOfGeoNode">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TreeNodeOfGeoNode" nillable="true" type="tns:TreeNodeOfGeoNode" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TreeNodeOfGeoNode">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:GeoNode" />
+          <s:element minOccurs="0" maxOccurs="1" name="Children" type="tns:ArrayOfTreeNodeOfGeoNode" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetGeoTreeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGeoTreeResult" type="tns:TreeOfGeoNode" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductOwners">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Organization">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LogoImage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Culture" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DefaultLanguage" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CurrencyCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fax" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrgNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountryCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StreetAddress1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StreetAddress2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StreetAddress3" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TellusId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CitybreakId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DefaultArenaId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrganizationType" type="tns:OrganizationType" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="OrganizationType">
+        <s:restriction base="s:string">
+          <s:enumeration value="ProductOwner" />
+          <s:enumeration value="Operator" />
+          <s:enumeration value="MultiOperator" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfOrganization">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Organization" nillable="true" type="tns:Organization" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetProductOwnersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductOwnersResult" type="tns:ArrayOfOrganization" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttributes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Attribute">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SystemName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MetaType" type="tns:MetaType" />
+          <s:element minOccurs="1" maxOccurs="1" name="SearchInputType" type="tns:InputTypes" />
+          <s:element minOccurs="1" maxOccurs="1" name="Searchable" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrgId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsLanguageIndependent" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="InputTypes">
+        <s:restriction base="s:string">
+          <s:enumeration value="DropDown" />
+          <s:enumeration value="TextField" />
+          <s:enumeration value="TextArea" />
+          <s:enumeration value="CheckBox" />
+          <s:enumeration value="Slider" />
+          <s:enumeration value="List" />
+          <s:enumeration value="File" />
+          <s:enumeration value="Occasions" />
+          <s:enumeration value="Image" />
+          <s:enumeration value="PointOfInterests" />
+          <s:enumeration value="Url" />
+          <s:enumeration value="Video" />
+          <s:enumeration value="DateTime" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfAttribute">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Attribute" nillable="true" type="tns:Attribute" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAttributesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAttributesResult" type="tns:ArrayOfAttribute" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttributeDefinitions">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAttributeDefinitionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetAttributeDefinitionsResult" type="tns:TemplateAttributeType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="TemplateAttributeType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Random" />
+          <s:enumeration value="Name" />
+          <s:enumeration value="Introduction" />
+          <s:enumeration value="Description" />
+          <s:enumeration value="direction" />
+          <s:enumeration value="openingHours" />
+          <s:enumeration value="entrence" />
+          <s:enumeration value="price" />
+          <s:enumeration value="phoneNumberString" />
+          <s:enumeration value="mobilePhoneString" />
+          <s:enumeration value="email" />
+          <s:enumeration value="website" />
+          <s:enumeration value="occasions" />
+          <s:enumeration value="other" />
+          <s:enumeration value="Latitude" />
+          <s:enumeration value="Longitude" />
+          <s:enumeration value="media" />
+          <s:enumeration value="closeTo" />
+          <s:enumeration value="StreetAddress1" />
+          <s:enumeration value="StreetAddress2" />
+          <s:enumeration value="StreetAddress3" />
+          <s:enumeration value="postalCode" />
+          <s:enumeration value="cityAddress" />
+          <s:enumeration value="countryAddress" />
+          <s:enumeration value="interests" />
+          <s:enumeration value="eventType" />
+          <s:enumeration value="eventUrl" />
+          <s:enumeration value="bookUrl" />
+          <s:enumeration value="ageLimit" />
+          <s:enumeration value="occasionsAndIdeas" />
+          <s:enumeration value="priceRange" />
+          <s:enumeration value="numRooms" />
+          <s:enumeration value="numFloors" />
+          <s:enumeration value="numConferenceRooms" />
+          <s:enumeration value="numBars" />
+          <s:enumeration value="yearBuilt" />
+          <s:enumeration value="lastRenovatedYear" />
+          <s:enumeration value="keyPickup" />
+          <s:enumeration value="capacity" />
+          <s:enumeration value="faxAsString" />
+          <s:enumeration value="numSeats" />
+          <s:enumeration value="acceptedCreditCards" />
+          <s:enumeration value="priceFromAsInt" />
+          <s:enumeration value="phoneNumberReception" />
+          <s:enumeration value="areaCodeReception" />
+          <s:enumeration value="countryCodeReception" />
+          <s:enumeration value="phoneNumberBooking" />
+          <s:enumeration value="areaCodeBooking" />
+          <s:enumeration value="countryCodeBooking" />
+          <s:enumeration value="checkInStart" />
+          <s:enumeration value="checkOutEnd" />
+          <s:enumeration value="link360" />
+          <s:enumeration value="classification" />
+          <s:enumeration value="externalLinks" />
+          <s:enumeration value="audience" />
+          <s:enumeration value="gbgPass" />
+          <s:enumeration value="specialTheme" />
+          <s:enumeration value="tdbId" />
+          <s:enumeration value="otherAttributes" />
+          <s:enumeration value="grfMember" />
+          <s:enumeration value="guideMichelinStar" />
+          <s:enumeration value="contactPersonName" />
+          <s:enumeration value="contactPersonEmail" />
+          <s:enumeration value="contactPersonNotes" />
+          <s:enumeration value="Facilities" />
+          <s:enumeration value="guestguide" />
+          <s:enumeration value="kalendarium" />
+          <s:enumeration value="numberOfDoublerooms" />
+          <s:enumeration value="numberOfSuites" />
+          <s:enumeration value="numberOfRoomsWithJacuzzi" />
+          <s:enumeration value="numberOfCommunityRooms" />
+          <s:enumeration value="numberOfDisabledRooms" />
+          <s:enumeration value="numberOfSingleRooms" />
+          <s:enumeration value="maxInCinema" />
+          <s:enumeration value="maxInSchool" />
+          <s:enumeration value="numberOfGroupRooms" />
+          <s:enumeration value="kitchenDescription" />
+          <s:enumeration value="historicFeatures" />
+          <s:enumeration value="history" />
+          <s:enumeration value="whiteGuideLink" />
+          <s:enumeration value="activities" />
+          <s:enumeration value="county" />
+          <s:enumeration value="editorNotes" />
+          <s:enumeration value="priceSpecial" />
+          <s:enumeration value="priceGroups" />
+          <s:enumeration value="priceChildren" />
+          <s:enumeration value="priceUnder12" />
+          <s:enumeration value="priceUnder16" />
+          <s:enumeration value="priceUnder7" />
+          <s:enumeration value="priceFamily" />
+          <s:enumeration value="priceMember" />
+          <s:enumeration value="priceRetired" />
+          <s:enumeration value="priceAdult" />
+          <s:enumeration value="priceStudent" />
+          <s:enumeration value="openingHoursReception" />
+          <s:enumeration value="worthSeeing" />
+          <s:enumeration value="roomsInMultipleBuildings" />
+          <s:enumeration value="conferenceDescription" />
+          <s:enumeration value="numberOfFamilyRooms" />
+          <s:enumeration value="numberOfDogRooms" />
+          <s:enumeration value="numberOfStudyRooms" />
+          <s:enumeration value="emailBooking" />
+          <s:enumeration value="faxBookingString" />
+          <s:enumeration value="otherPhoneString" />
+          <s:enumeration value="otherPhoneDetails" />
+          <s:enumeration value="LinkSkanetrafiken" />
+          <s:enumeration value="Fishspecies" />
+          <s:enumeration value="MaxNoofConfPart" />
+          <s:enumeration value="Noofpeopleinbiggestconferenceroom" />
+          <s:enumeration value="NoCalendarium" />
+          <s:enumeration value="Conferencesalespersonname" />
+          <s:enumeration value="conferencesalespersonphone" />
+          <s:enumeration value="conferencesalescellphone" />
+          <s:enumeration value="conferencesalesemail" />
+          <s:enumeration value="Conferencesalespersonname2" />
+          <s:enumeration value="conferencesalesphone2" />
+          <s:enumeration value="conferencesalescellphone2" />
+          <s:enumeration value="conferencesalesemail2" />
+          <s:enumeration value="noofpepsinislands" />
+          <s:enumeration value="noofpepsinuseating" />
+          <s:enumeration value="noofroomsforconfparticipants" />
+          <s:enumeration value="noofbedsforconfparticipants" />
+          <s:enumeration value="Restaurangtext" />
+          <s:enumeration value="activitytext" />
+          <s:enumeration value="maxnoofpepsinrestaurant" />
+          <s:enumeration value="general" />
+          <s:enumeration value="wwwlinkfoodskane" />
+          <s:enumeration value="vartmalmo" />
+          <s:enumeration value="Malmose" />
+          <s:enumeration value="Malmotowncom" />
+          <s:enumeration value="fokusomradenkultur" />
+          <s:enumeration value="Generellafaciliteter" />
+          <s:enumeration value="KokochHushall" />
+          <s:enumeration value="Aktiviteter" />
+          <s:enumeration value="Campingochstugor" />
+          <s:enumeration value="Konferensutrymmen" />
+          <s:enumeration value="Andraovernattningsmojligheter" />
+          <s:enumeration value="Utskankningsrattigheter" />
+          <s:enumeration value="Sprak" />
+          <s:enumeration value="Batar" />
+          <s:enumeration value="Kreditkort" />
+          <s:enumeration value="Resepaket" />
+          <s:enumeration value="Museum" />
+          <s:enumeration value="Jakt" />
+          <s:enumeration value="Skiduthyrning" />
+          <s:enumeration value="Konstochhantverk" />
+          <s:enumeration value="Djurarter" />
+          <s:enumeration value="Vintersport" />
+          <s:enumeration value="Natur" />
+          <s:enumeration value="Sportaktiviteter" />
+          <s:enumeration value="Uthyrning" />
+          <s:enumeration value="Hamnfaciliteter" />
+          <s:enumeration value="Sasong" />
+          <s:enumeration value="Handikapp" />
+          <s:enumeration value="visitDalarnase" />
+          <s:enumeration value="priceUpTo26" />
+          <s:enumeration value="organizerName" />
+          <s:enumeration value="coOrganizer" />
+          <s:enumeration value="receivingCultureFunds" />
+          <s:enumeration value="applicationdeadline" />
+          <s:enumeration value="membershiprequired" />
+          <s:enumeration value="signuprequired" />
+          <s:enumeration value="externalsignuptext" />
+          <s:enumeration value="externalsignuplink" />
+          <s:enumeration value="phoneNumberBookingString" />
+          <s:enumeration value="copyText" />
+          <s:enumeration value="includedInCooperation" />
+          <s:enumeration value="suitableForDisabled" />
+          <s:enumeration value="restaurantFacilities" />
+          <s:enumeration value="numberOfPeopleInBiggestRoom" />
+          <s:enumeration value="nameLink1" />
+          <s:enumeration value="link1" />
+          <s:enumeration value="descriptionLink1" />
+          <s:enumeration value="nameLink2" />
+          <s:enumeration value="link2" />
+          <s:enumeration value="descriptionLink2" />
+          <s:enumeration value="nameLink3" />
+          <s:enumeration value="link3" />
+          <s:enumeration value="descriptionLink3" />
+          <s:enumeration value="signupListEmail" />
+          <s:enumeration value="facilitiesactivities" />
+          <s:enumeration value="facilitiesconference" />
+          <s:enumeration value="maxnumberofaccommodation" />
+          <s:enumeration value="eventFacilities" />
+          <s:enumeration value="arenaFacilities" />
+          <s:enumeration value="shoppingFacilities" />
+          <s:enumeration value="cultureFacilities" />
+          <s:enumeration value="sightsFacilities" />
+          <s:enumeration value="zoomlevel" />
+          <s:enumeration value="facilitiesHotel" />
+          <s:enumeration value="facilitiesCabin" />
+          <s:enumeration value="facilitiesApartment" />
+          <s:enumeration value="numberOfPeopleSocializing" />
+          <s:enumeration value="numberOfSeatsOutside" />
+          <s:enumeration value="vimeolink" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetSupplierInformation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SupplierInformation">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="OrgId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LogoUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Attributes" type="tns:ArrayOfAttributeData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSupplierInformation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SupplierInformation" nillable="true" type="tns:SupplierInformation" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSupplierInformationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSupplierInformationResult" type="tns:ArrayOfSupplierInformation" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="productId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductByIdResult" type="tns:Product" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubProductsByParentId2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="parentProductId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubProductsByParentId2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSubProductsByParentId2Result" type="tns:ArrayOfProduct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetArenasWithOccasionsByIds">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="arenaIds" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetArenasWithOccasionsByIdsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetArenasWithOccasionsByIdsResult" type="tns:ArrayOfProduct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductsWithOccasionsOnArenaIds">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="arenaIds" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductsWithOccasionsOnArenaIdsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductsWithOccasionsOnArenaIdsResult" type="tns:ArrayOfProduct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductMappingByProductReferencesInChannel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="productReferences" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProductMappingByReference">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CBISProductId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductReference" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductType" type="tns:ProductType" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfProductMappingByReference">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductMappingByReference" nillable="true" type="tns:ProductMappingByReference" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetProductMappingByProductReferencesInChannelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductMappingByProductReferencesInChannelResult" type="tns:ArrayOfProductMappingByReference" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDistributionChannelId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDistributionChannelIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetDistributionChannelIdResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsProductReferenceUniqueInChannel">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="productReferece" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsProductReferenceUniqueInChannelResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsProductReferenceUniqueInChannelResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ListAllSoapIn">
+    <wsdl:part name="parameters" element="tns:ListAll" />
+  </wsdl:message>
+  <wsdl:message name="ListAllSoapOut">
+    <wsdl:part name="parameters" element="tns:ListAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListAllWithImagesFirstSoapIn">
+    <wsdl:part name="parameters" element="tns:ListAllWithImagesFirst" />
+  </wsdl:message>
+  <wsdl:message name="ListAllWithImagesFirstSoapOut">
+    <wsdl:part name="parameters" element="tns:ListAllWithImagesFirstResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductsByTemplateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProductsByTemplate" />
+  </wsdl:message>
+  <wsdl:message name="GetProductsByTemplateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductsByTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="WithIdsSoapIn">
+    <wsdl:part name="parameters" element="tns:WithIds" />
+  </wsdl:message>
+  <wsdl:message name="WithIdsSoapOut">
+    <wsdl:part name="parameters" element="tns:WithIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListIdsSoapIn">
+    <wsdl:part name="parameters" element="tns:ListIds" />
+  </wsdl:message>
+  <wsdl:message name="ListIdsSoapOut">
+    <wsdl:part name="parameters" element="tns:ListIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListProductIdsLanguageInvariantSoapIn">
+    <wsdl:part name="parameters" element="tns:ListProductIdsLanguageInvariant" />
+  </wsdl:message>
+  <wsdl:message name="ListProductIdsLanguageInvariantSoapOut">
+    <wsdl:part name="parameters" element="tns:ListProductIdsLanguageInvariantResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListArenaIdsLanguageInvariantSoapIn">
+    <wsdl:part name="parameters" element="tns:ListArenaIdsLanguageInvariant" />
+  </wsdl:message>
+  <wsdl:message name="ListArenaIdsLanguageInvariantSoapOut">
+    <wsdl:part name="parameters" element="tns:ListArenaIdsLanguageInvariantResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListIdsLanguageInvariantSoapIn">
+    <wsdl:part name="parameters" element="tns:ListIdsLanguageInvariant" />
+  </wsdl:message>
+  <wsdl:message name="ListIdsLanguageInvariantSoapOut">
+    <wsdl:part name="parameters" element="tns:ListIdsLanguageInvariantResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUpdateInformationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUpdateInformation" />
+  </wsdl:message>
+  <wsdl:message name="GetUpdateInformationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUpdateInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSubProductsByParentIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSubProductsByParentId" />
+  </wsdl:message>
+  <wsdl:message name="GetSubProductsByParentIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSubProductsByParentIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetById" />
+  </wsdl:message>
+  <wsdl:message name="GetByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByForeignIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByForeignId" />
+  </wsdl:message>
+  <wsdl:message name="GetByForeignIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByForeignIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByProductReferencesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByProductReferences" />
+  </wsdl:message>
+  <wsdl:message name="GetByProductReferencesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByProductReferencesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByProductReferencesInChannelSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByProductReferencesInChannel" />
+  </wsdl:message>
+  <wsdl:message name="GetByProductReferencesInChannelSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByProductReferencesInChannelResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetParentProductByProductReferenceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetParentProductByProductReference" />
+  </wsdl:message>
+  <wsdl:message name="GetParentProductByProductReferenceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetParentProductByProductReferenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPointsOfInterestSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPointsOfInterest" />
+  </wsdl:message>
+  <wsdl:message name="GetPointsOfInterestSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPointsOfInterestResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByUrlNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByUrlName" />
+  </wsdl:message>
+  <wsdl:message name="GetByUrlNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByUrlNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGeoTreeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGeoTree" />
+  </wsdl:message>
+  <wsdl:message name="GetGeoTreeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGeoTreeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductOwnersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProductOwners" />
+  </wsdl:message>
+  <wsdl:message name="GetProductOwnersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductOwnersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAttributesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAttributes" />
+  </wsdl:message>
+  <wsdl:message name="GetAttributesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAttributesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAttributeDefinitionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAttributeDefinitions" />
+  </wsdl:message>
+  <wsdl:message name="GetAttributeDefinitionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAttributeDefinitionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSupplierInformationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSupplierInformation" />
+  </wsdl:message>
+  <wsdl:message name="GetSupplierInformationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSupplierInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProductById" />
+  </wsdl:message>
+  <wsdl:message name="GetProductByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSubProductsByParentId2SoapIn">
+    <wsdl:part name="parameters" element="tns:GetSubProductsByParentId2" />
+  </wsdl:message>
+  <wsdl:message name="GetSubProductsByParentId2SoapOut">
+    <wsdl:part name="parameters" element="tns:GetSubProductsByParentId2Response" />
+  </wsdl:message>
+  <wsdl:message name="GetArenasWithOccasionsByIdsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetArenasWithOccasionsByIds" />
+  </wsdl:message>
+  <wsdl:message name="GetArenasWithOccasionsByIdsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetArenasWithOccasionsByIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductsWithOccasionsOnArenaIdsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProductsWithOccasionsOnArenaIds" />
+  </wsdl:message>
+  <wsdl:message name="GetProductsWithOccasionsOnArenaIdsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductsWithOccasionsOnArenaIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductMappingByProductReferencesInChannelSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProductMappingByProductReferencesInChannel" />
+  </wsdl:message>
+  <wsdl:message name="GetProductMappingByProductReferencesInChannelSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductMappingByProductReferencesInChannelResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDistributionChannelIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDistributionChannelId" />
+  </wsdl:message>
+  <wsdl:message name="GetDistributionChannelIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDistributionChannelIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsProductReferenceUniqueInChannelSoapIn">
+    <wsdl:part name="parameters" element="tns:IsProductReferenceUniqueInChannel" />
+  </wsdl:message>
+  <wsdl:message name="IsProductReferenceUniqueInChannelSoapOut">
+    <wsdl:part name="parameters" element="tns:IsProductReferenceUniqueInChannelResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ProductsSoap">
+    <wsdl:operation name="ListAll">
+      <wsdl:input message="tns:ListAllSoapIn" />
+      <wsdl:output message="tns:ListAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListAllWithImagesFirst">
+      <wsdl:input message="tns:ListAllWithImagesFirstSoapIn" />
+      <wsdl:output message="tns:ListAllWithImagesFirstSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductsByTemplate">
+      <wsdl:input message="tns:GetProductsByTemplateSoapIn" />
+      <wsdl:output message="tns:GetProductsByTemplateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WithIds">
+      <wsdl:input message="tns:WithIdsSoapIn" />
+      <wsdl:output message="tns:WithIdsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListIds">
+      <wsdl:input message="tns:ListIdsSoapIn" />
+      <wsdl:output message="tns:ListIdsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListProductIdsLanguageInvariant">
+      <wsdl:input message="tns:ListProductIdsLanguageInvariantSoapIn" />
+      <wsdl:output message="tns:ListProductIdsLanguageInvariantSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListArenaIdsLanguageInvariant">
+      <wsdl:input message="tns:ListArenaIdsLanguageInvariantSoapIn" />
+      <wsdl:output message="tns:ListArenaIdsLanguageInvariantSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListIdsLanguageInvariant">
+      <wsdl:input message="tns:ListIdsLanguageInvariantSoapIn" />
+      <wsdl:output message="tns:ListIdsLanguageInvariantSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUpdateInformation">
+      <wsdl:input message="tns:GetUpdateInformationSoapIn" />
+      <wsdl:output message="tns:GetUpdateInformationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubProductsByParentId">
+      <wsdl:input message="tns:GetSubProductsByParentIdSoapIn" />
+      <wsdl:output message="tns:GetSubProductsByParentIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetById">
+      <wsdl:input message="tns:GetByIdSoapIn" />
+      <wsdl:output message="tns:GetByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByForeignId">
+      <wsdl:input message="tns:GetByForeignIdSoapIn" />
+      <wsdl:output message="tns:GetByForeignIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByProductReferences">
+      <wsdl:input message="tns:GetByProductReferencesSoapIn" />
+      <wsdl:output message="tns:GetByProductReferencesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByProductReferencesInChannel">
+      <wsdl:input message="tns:GetByProductReferencesInChannelSoapIn" />
+      <wsdl:output message="tns:GetByProductReferencesInChannelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParentProductByProductReference">
+      <wsdl:input message="tns:GetParentProductByProductReferenceSoapIn" />
+      <wsdl:output message="tns:GetParentProductByProductReferenceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPointsOfInterest">
+      <wsdl:input message="tns:GetPointsOfInterestSoapIn" />
+      <wsdl:output message="tns:GetPointsOfInterestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByUrlName">
+      <wsdl:input message="tns:GetByUrlNameSoapIn" />
+      <wsdl:output message="tns:GetByUrlNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoTree">
+      <wsdl:input message="tns:GetGeoTreeSoapIn" />
+      <wsdl:output message="tns:GetGeoTreeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductOwners">
+      <wsdl:input message="tns:GetProductOwnersSoapIn" />
+      <wsdl:output message="tns:GetProductOwnersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributes">
+      <wsdl:input message="tns:GetAttributesSoapIn" />
+      <wsdl:output message="tns:GetAttributesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributeDefinitions">
+      <wsdl:input message="tns:GetAttributeDefinitionsSoapIn" />
+      <wsdl:output message="tns:GetAttributeDefinitionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierInformation">
+      <wsdl:input message="tns:GetSupplierInformationSoapIn" />
+      <wsdl:output message="tns:GetSupplierInformationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductById">
+      <wsdl:input message="tns:GetProductByIdSoapIn" />
+      <wsdl:output message="tns:GetProductByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubProductsByParentId2">
+      <wsdl:input message="tns:GetSubProductsByParentId2SoapIn" />
+      <wsdl:output message="tns:GetSubProductsByParentId2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetArenasWithOccasionsByIds">
+      <wsdl:input message="tns:GetArenasWithOccasionsByIdsSoapIn" />
+      <wsdl:output message="tns:GetArenasWithOccasionsByIdsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductsWithOccasionsOnArenaIds">
+      <wsdl:input message="tns:GetProductsWithOccasionsOnArenaIdsSoapIn" />
+      <wsdl:output message="tns:GetProductsWithOccasionsOnArenaIdsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductMappingByProductReferencesInChannel">
+      <wsdl:input message="tns:GetProductMappingByProductReferencesInChannelSoapIn" />
+      <wsdl:output message="tns:GetProductMappingByProductReferencesInChannelSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributionChannelId">
+      <wsdl:input message="tns:GetDistributionChannelIdSoapIn" />
+      <wsdl:output message="tns:GetDistributionChannelIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsProductReferenceUniqueInChannel">
+      <wsdl:input message="tns:IsProductReferenceUniqueInChannelSoapIn" />
+      <wsdl:output message="tns:IsProductReferenceUniqueInChannelSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ProductsSoap" type="tns:ProductsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListAll">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/ListAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllWithImagesFirst">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/ListAllWithImagesFirst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductsByTemplate">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetProductsByTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WithIds">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/WithIds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListIds">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/ListIds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListProductIdsLanguageInvariant">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/ListProductIdsLanguageInvariant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListArenaIdsLanguageInvariant">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/ListArenaIdsLanguageInvariant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListIdsLanguageInvariant">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/ListIdsLanguageInvariant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUpdateInformation">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetUpdateInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubProductsByParentId">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetSubProductsByParentId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetById">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByForeignId">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetByForeignId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByProductReferences">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetByProductReferences" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByProductReferencesInChannel">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetByProductReferencesInChannel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParentProductByProductReference">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetParentProductByProductReference" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPointsOfInterest">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetPointsOfInterest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByUrlName">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetByUrlName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoTree">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetGeoTree" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductOwners">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetProductOwners" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributes">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetAttributes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributeDefinitions">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetAttributeDefinitions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierInformation">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetSupplierInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductById">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetProductById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubProductsByParentId2">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetSubProductsByParentId2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArenasWithOccasionsByIds">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetArenasWithOccasionsByIds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductsWithOccasionsOnArenaIds">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetProductsWithOccasionsOnArenaIds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductMappingByProductReferencesInChannel">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetProductMappingByProductReferencesInChannel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributionChannelId">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetDistributionChannelId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsProductReferenceUniqueInChannel">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/IsProductReferenceUniqueInChannel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ProductsSoap12" type="tns:ProductsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListAll">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/ListAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllWithImagesFirst">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/ListAllWithImagesFirst" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductsByTemplate">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetProductsByTemplate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WithIds">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/WithIds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListIds">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/ListIds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListProductIdsLanguageInvariant">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/ListProductIdsLanguageInvariant" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListArenaIdsLanguageInvariant">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/ListArenaIdsLanguageInvariant" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListIdsLanguageInvariant">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/ListIdsLanguageInvariant" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUpdateInformation">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetUpdateInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubProductsByParentId">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetSubProductsByParentId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetById">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByForeignId">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetByForeignId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByProductReferences">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetByProductReferences" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByProductReferencesInChannel">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetByProductReferencesInChannel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParentProductByProductReference">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetParentProductByProductReference" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPointsOfInterest">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetPointsOfInterest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByUrlName">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetByUrlName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoTree">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetGeoTree" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductOwners">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetProductOwners" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributes">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetAttributes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttributeDefinitions">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetAttributeDefinitions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierInformation">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetSupplierInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductById">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetProductById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubProductsByParentId2">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetSubProductsByParentId2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetArenasWithOccasionsByIds">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetArenasWithOccasionsByIds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductsWithOccasionsOnArenaIds">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetProductsWithOccasionsOnArenaIds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductMappingByProductReferencesInChannel">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetProductMappingByProductReferencesInChannel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDistributionChannelId">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetDistributionChannelId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsProductReferenceUniqueInChannel">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/IsProductReferenceUniqueInChannel" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Products">
+    <wsdl:port name="ProductsSoap" binding="tns:ProductsSoap">
+      <soap:address location="http://api.info.citybreak.com/Products.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ProductsSoap12" binding="tns:ProductsSoap12">
+      <soap12:address location="http://api.info.citybreak.com/Products.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

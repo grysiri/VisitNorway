@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://api.info.citybreak.com/vb3/Categories.asmx?wsdl" docRef="http://api.info.citybreak.com/vb3/Categories.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://api.info.citybreak.com/vb3/Categories.asmx" xmlns:q1="http://api.cbis.citybreak.com/" binding="q1:CategoriesSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://api.info.citybreak.com/vb3/Categories.asmx" xmlns:q2="http://api.cbis.citybreak.com/" binding="q2:CategoriesSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

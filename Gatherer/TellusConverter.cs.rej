@@ -1,0 +1,9 @@
+diff a/Gatherer/TellusConverter.cs b/Gatherer/TellusConverter.cs	(rejected hunks)
+@@ -1066,7 +1066,6 @@
+             }
+         }
+ 
+-        //compares two products by their external id
+         public class ProductExIdComparer : IEqualityComparer<Product>
+         {
+             public bool Equals(Product x, Product y)

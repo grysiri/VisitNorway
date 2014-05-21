@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://feed.tellus.no/v2.4" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://feed.tellus.no/v2.4" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Global feed for integrating Tellus data in 3. party systems.
+&lt;br/&gt;This service is &lt;strong style="color:#f00;"&gt;not&lt;/strong&gt; availble for web site production, only for scheduled downloads.
+&lt;br/&gt;This service requires a Licence Key.
+&lt;br/&gt;All usage is logged and any abuse or licence violations are reported.</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://feed.tellus.no/v2.4">
+      <s:element name="GetProductList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LicenceKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LanguageId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DBOwnerIdList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CategoryIdList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContentQuality" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CountryId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CountyIdList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MunicipalityIdList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FromDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DistributionChannelId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TopicFlagIdList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeltaTimeStamp" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LicenceKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LanguageId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DBOwnerIdList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CategoryIdList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ContentQuality" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CountryId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CountyIdList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MunicipalityIdList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FromDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DistributionChannelId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TopicFlagIdList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeltaTimeStamp" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDBOwnerList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LicenceKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CountryId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DistributionChannelId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TopicFlagIdList" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeltaTimeStamp" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDBOwnerListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDBOwnerListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProduct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LicenceKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LanguageId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ProductId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DistributionChannelId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomCategoryList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LicenceKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LanguageId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ParentId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DistributionChannelId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IncludeMapping" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomCategoryListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomCategoryListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetProductListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProductList" />
+  </wsdl:message>
+  <wsdl:message name="GetProductListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerList" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDBOwnerListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDBOwnerList" />
+  </wsdl:message>
+  <wsdl:message name="GetDBOwnerListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDBOwnerListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProduct" />
+  </wsdl:message>
+  <wsdl:message name="GetProductSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomCategoryListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomCategoryList" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomCategoryListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomCategoryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductListHttpPostIn">
+    <wsdl:part name="LicenceKey" type="s:string" />
+    <wsdl:part name="LanguageId" type="s:string" />
+    <wsdl:part name="DBOwnerIdList" type="s:string" />
+    <wsdl:part name="CategoryIdList" type="s:string" />
+    <wsdl:part name="ContentQuality" type="s:string" />
+    <wsdl:part name="CountryId" type="s:string" />
+    <wsdl:part name="CountyIdList" type="s:string" />
+    <wsdl:part name="MunicipalityIdList" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="DistributionChannelId" type="s:string" />
+    <wsdl:part name="TopicFlagIdList" type="s:string" />
+    <wsdl:part name="DeltaTimeStamp" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetProductListHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerListHttpPostIn">
+    <wsdl:part name="LicenceKey" type="s:string" />
+    <wsdl:part name="LanguageId" type="s:string" />
+    <wsdl:part name="DBOwnerIdList" type="s:string" />
+    <wsdl:part name="CategoryIdList" type="s:string" />
+    <wsdl:part name="ContentQuality" type="s:string" />
+    <wsdl:part name="CountryId" type="s:string" />
+    <wsdl:part name="CountyIdList" type="s:string" />
+    <wsdl:part name="MunicipalityIdList" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="DistributionChannelId" type="s:string" />
+    <wsdl:part name="TopicFlagIdList" type="s:string" />
+    <wsdl:part name="DeltaTimeStamp" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerListHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDBOwnerListHttpPostIn">
+    <wsdl:part name="LicenceKey" type="s:string" />
+    <wsdl:part name="CountryId" type="s:string" />
+    <wsdl:part name="DistributionChannelId" type="s:string" />
+    <wsdl:part name="TopicFlagIdList" type="s:string" />
+    <wsdl:part name="DeltaTimeStamp" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDBOwnerListHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetProductHttpPostIn">
+    <wsdl:part name="LicenceKey" type="s:string" />
+    <wsdl:part name="LanguageId" type="s:string" />
+    <wsdl:part name="ProductId" type="s:string" />
+    <wsdl:part name="DistributionChannelId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetProductHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomCategoryListHttpPostIn">
+    <wsdl:part name="LicenceKey" type="s:string" />
+    <wsdl:part name="LanguageId" type="s:string" />
+    <wsdl:part name="ParentId" type="s:string" />
+    <wsdl:part name="DistributionChannelId" type="s:string" />
+    <wsdl:part name="IncludeMapping" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomCategoryListHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="Tellus_x0020_Feed_x0020__x0026_copy_x003B__x0020_v2.4Soap">
+    <wsdl:operation name="GetProductList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Download product list based on criteria.</wsdl:documentation>
+      <wsdl:input message="tns:GetProductListSoapIn" />
+      <wsdl:output message="tns:GetProductListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Download customer list based on criteria.</wsdl:documentation>
+      <wsdl:input message="tns:GetCustomerListSoapIn" />
+      <wsdl:output message="tns:GetCustomerListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDBOwnerList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Download dbowner list based on criteria.</wsdl:documentation>
+      <wsdl:input message="tns:GetDBOwnerListSoapIn" />
+      <wsdl:output message="tns:GetDBOwnerListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProduct">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Download product list based on criteria.</wsdl:documentation>
+      <wsdl:input message="tns:GetProductSoapIn" />
+      <wsdl:output message="tns:GetProductSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomCategoryList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Download custom category tree including their mapping based on criteria.</wsdl:documentation>
+      <wsdl:input message="tns:GetCustomCategoryListSoapIn" />
+      <wsdl:output message="tns:GetCustomCategoryListSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Tellus_x0020_Feed_x0020__x0026_copy_x003B__x0020_v2.4HttpPost">
+    <wsdl:operation name="GetProductList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Download product list based on criteria.</wsdl:documentation>
+      <wsdl:input message="tns:GetProductListHttpPostIn" />
+      <wsdl:output message="tns:GetProductListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Download customer list based on criteria.</wsdl:documentation>
+      <wsdl:input message="tns:GetCustomerListHttpPostIn" />
+      <wsdl:output message="tns:GetCustomerListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDBOwnerList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Download dbowner list based on criteria.</wsdl:documentation>
+      <wsdl:input message="tns:GetDBOwnerListHttpPostIn" />
+      <wsdl:output message="tns:GetDBOwnerListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProduct">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Download product list based on criteria.</wsdl:documentation>
+      <wsdl:input message="tns:GetProductHttpPostIn" />
+      <wsdl:output message="tns:GetProductHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomCategoryList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Download custom category tree including their mapping based on criteria.</wsdl:documentation>
+      <wsdl:input message="tns:GetCustomCategoryListHttpPostIn" />
+      <wsdl:output message="tns:GetCustomCategoryListHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Tellus_x0020_Feed_x0020__x0026_copy_x003B__x0020_v2.4Soap" type="tns:Tellus_x0020_Feed_x0020__x0026_copy_x003B__x0020_v2.4Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetProductList">
+      <soap:operation soapAction="http://feed.tellus.no/v2.4/GetProductList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <soap:operation soapAction="http://feed.tellus.no/v2.4/GetCustomerList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDBOwnerList">
+      <soap:operation soapAction="http://feed.tellus.no/v2.4/GetDBOwnerList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProduct">
+      <soap:operation soapAction="http://feed.tellus.no/v2.4/GetProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomCategoryList">
+      <soap:operation soapAction="http://feed.tellus.no/v2.4/GetCustomCategoryList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Tellus_x0020_Feed_x0020__x0026_copy_x003B__x0020_v2.4Soap12" type="tns:Tellus_x0020_Feed_x0020__x0026_copy_x003B__x0020_v2.4Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetProductList">
+      <soap12:operation soapAction="http://feed.tellus.no/v2.4/GetProductList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <soap12:operation soapAction="http://feed.tellus.no/v2.4/GetCustomerList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDBOwnerList">
+      <soap12:operation soapAction="http://feed.tellus.no/v2.4/GetDBOwnerList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProduct">
+      <soap12:operation soapAction="http://feed.tellus.no/v2.4/GetProduct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomCategoryList">
+      <soap12:operation soapAction="http://feed.tellus.no/v2.4/GetCustomCategoryList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Tellus_x0020_Feed_x0020__x0026_copy_x003B__x0020_v2.4HttpPost" type="tns:Tellus_x0020_Feed_x0020__x0026_copy_x003B__x0020_v2.4HttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="GetProductList">
+      <http:operation location="/GetProductList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerList">
+      <http:operation location="/GetCustomerList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDBOwnerList">
+      <http:operation location="/GetDBOwnerList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProduct">
+      <http:operation location="/GetProduct" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomCategoryList">
+      <http:operation location="/GetCustomCategoryList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Tellus_x0020_Feed_x0020__x0026_copy_x003B__x0020_v2.4">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Global feed for integrating Tellus data in 3. party systems.
+&lt;br/&gt;This service is &lt;strong style="color:#f00;"&gt;not&lt;/strong&gt; availble for web site production, only for scheduled downloads.
+&lt;br/&gt;This service requires a Licence Key.
+&lt;br/&gt;All usage is logged and any abuse or licence violations are reported.</wsdl:documentation>
+    <wsdl:port name="Tellus_x0020_Feed_x0020__x0026_copy_x003B__x0020_v2.4Soap" binding="tns:Tellus_x0020_Feed_x0020__x0026_copy_x003B__x0020_v2.4Soap">
+      <soap:address location="http://feed.tellus.no/v2.4/default.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Tellus_x0020_Feed_x0020__x0026_copy_x003B__x0020_v2.4Soap12" binding="tns:Tellus_x0020_Feed_x0020__x0026_copy_x003B__x0020_v2.4Soap12">
+      <soap12:address location="http://feed.tellus.no/v2.4/default.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Tellus_x0020_Feed_x0020__x0026_copy_x003B__x0020_v2.4HttpPost" binding="tns:Tellus_x0020_Feed_x0020__x0026_copy_x003B__x0020_v2.4HttpPost">
+      <http:address location="http://feed.tellus.no/v2.4/default.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
