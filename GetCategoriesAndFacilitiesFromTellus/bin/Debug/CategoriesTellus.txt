@@ -1,0 +1,1659 @@
+1 Overnatting
+   3 Hotell
+     709 Bed & breakfast
+     710 Høyfjellshotell
+     711 Full service
+     712 Andre hoteller
+     876 Is og snø
+     2353 Spa
+     2421 Historiske hoteller
+     2803 Badehotell
+   5 Campingplass
+     867 Rom
+     868 Campingvogn/husvogn til utleie
+     1244 Vintercamping
+     1350 Campinghytter
+   26 Turistforeningshytte DNT
+   28 App.hotell/ leilighetsanlegg
+   256 Annen overnatting
+     2491 Familie
+   260 Fjellstue
+   261 Hytter
+     829 Campinghytter
+     830 Selvhusholdshytter
+     871 Fiskehytte
+     872 Villmarks hytter
+     1072 Privat hytte
+     1373 Turisthytte
+   262 Vandrerhjem/Ungdomsherberge
+   263 Bondegårdsferie
+   410 Marina
+   421 Bobilområde
+   435 Seter
+   451 Gjestgiveri
+   515 Rorbu
+   653 Helseferie
+   654 Booking
+   655 Konferanse
+   695 Feriehus
+   714 Telt
+   766 Sjøhus
+   767 Hus
+   774 Motell
+   808 Leiligheter
+   809 Pensjonat
+   829 Ranch ferie
+   845 Pensjonat/Gjestegiveri
+   847 Bed & Breakfast
+   862 Rom
+   867 Gjeste Ranch
+   906 Hytteby
+   907 Bondegård
+   909 Gjestehavner
+   911 Helsefarm/Spa
+   923 Gjestegård
+   931 Gamme
+   937 Privat overnatting
+     1255 Leilighet
+     1256 Rom
+     1257 Hytte
+     1415 Hus
+   946 Gruppe logi
+   948 Feriested/Resort
+   967 Rom/Hytte
+   1007 Hytte/leilighet
+   1016 Kloster
+   1122 Kurssentre
+   1153 Campingvogner
+   1155 Villavogner
+   1166 Kystled
+   1204 For bussgrupper
+   1429 Fyr
+   1437 Lavvo
+   1458 Stabbur
+   1467 Konferanse- og møtehotell
+   1474 Vertshus/Pensjonat
+   1477 Turistforeningshytte STF
+   2420 Villmarkscamp
+   2421 Overnatting i fjellet
+   2431 Leirskoler
+   2432 Leirplasser i naturen
+   2760 Herberge
+   2804 Bobil
+   2807 Feriesenter
+2 Servering
+   9 Restaurant
+     531 Vegetar
+     532 Lunch
+     533 Eksklusive
+     535 Fisk & skalldyr
+     536 Rimelige
+     538 Klassiske
+     540 Rullestoltilpasset
+     541 Hotell restauranter
+     545 Internasjonal
+     546 Fransk
+     547 Indisk
+     549 Amerikansk
+     550 Kinesisk
+     551 Norsk
+     552 Gresk
+     553 Italiensk
+     554 Japansk
+     555 Mongolsk
+     556 Meksikansk
+     557 Tyrkisk
+     558 Thai
+     560 Vietnamesisk
+     561 Kreolsk
+     562 Marrokansk/Tunisisk
+     563 Spansk
+     565 Iransk
+     567 Dansk
+     723 Lokale Spesialiteter
+     818 Pakistansk
+     831 Pizza
+     854 Svensk
+     855 Vilt
+     913 Arktisk Meny
+     980 Gourmet
+     981 Orientalsk
+     983 Biffhus
+     1013 Julebord
+     1131 Andre
+     1161 Spesialiteter
+     1197 Europeisk
+     1198 Husmannskost
+     1199 Middelhavsmat
+     1413 Tapas
+     2376 Sushi
+     2405 Grill
+     2420 Smørbrød
+     2670 Økologisk
+     2679 Midtøsten
+     2680 Nordisk
+   10 Bar/pub
+     2422 Øl
+     2423 Vin
+     2424 Coctail
+   12 Kafeteria
+   266 Danserestaurant
+   317 Selskapslokaler
+   318 Annet
+     2489 Familie
+     2490 Tradisjonell
+   388 Discotek
+   414 Gatekjøkken
+   422 Veikro
+   530 Sportsstuer
+   534 Grupper
+   537 Frokost
+   539 Ungdom og studenter
+   542 Natt-åpent
+   543 Søndags-åpent
+   544 Uteservering
+   697 Konditori
+   776 Iskrembar
+   855 Internet Café
+   865 Café
+     2610 Musikkcafe
+   903 Gjestgiveri
+   904 Kaffebar
+   915 Konferanselokaler
+   919 Gårds Café /Butikk
+   942 Vertshus
+   952 Drive In
+   969 Catering
+   976 Fastfood
+   1003 Pizza
+   1004 Nattklubb
+   1025 Kro
+   1052 After Beach
+   1053 After Ski
+   1202 For bussgrupper
+   1457 Julebord
+   1523 Lokal mat
+   2405 Økologisk
+   2407 Take Away
+   2408 After Work
+   2676 Brunch
+   2679 Burger
+   2766 Røkeri
+3 Forretninger-Service
+   572 Friluftsliv
+   573 Knivsmed
+   692 Butikker
+     570 Delikatesser
+     571 Foto
+     578 Parfymeri
+     582 Ur-optikk
+     584 Husflid
+     585 Musikk
+     590 Bilen
+     594 Gullsmed
+     610 Interiør
+     612 Leker
+     720 Hvite og brune varer
+     721 Kjøpesenter
+     760 Fisk/vilt/sjømat
+     761 Flagg og vimpler
+     762 Kaffe/te
+     763 Maritime gaver
+     764 Norske art.
+     765 Ost/delikatesse
+     766 Søtsaker
+     767 Sweaters
+     787 Antikk og brukt
+     788 Blomster
+     789 Brukskunst
+     790 Firmagaver
+     791 Souvenir
+     792 Bok og papirhandel
+     793 Elektriske art.
+     794 Matvarer
+     817 Pels og skinnvarer
+     824 TV/Video/Stereo
+     825 Tobakk og aviser
+     826 Sport
+     827 Kiosk
+     828 Dyr
+     845 Loppemarked
+     846 Helsekost
+     858 Bakeri
+     859 Fargehandler
+     860 Gaveartikler
+     861 VVS
+     862 Apotek
+     863 Klær
+     877 Sølvsmed
+     878 Julehus
+     879 Garn og strikkeprodukter
+     886 Datautstyr
+     999 Konfeksjon
+     1000 Porselen
+     1001 Babyartikler
+     1002 Krydder
+     1003 Urter
+     1040 Jernvarehandel
+     1041 Møbler
+     1042 Sko
+     1058 Bær
+     1059 Grønnsaker
+     1060 Kjøtt
+     1061 Sopp
+     1084 Fiskeutstyr
+     1100 Dagligvare
+     1101 Varehus
+     1125 Andre butikker
+     1162 Tele og kommunikasjon
+     1163 Smykker
+     1252 Byggevarer
+     1388 Hobby
+     1389 Telefoni
+     1390 Jakt og Fiske
+     1391 Spill og leker
+     1392 Second hand
+     1414 Design
+     2377 Kjøkkeninnredninger
+     2404 Båt
+   703 Reiseeffekter
+   704 Klær/Skotøy
+     770 Regntøy/Seiltøy
+     795 Barneklær
+     797 Selskapsklær
+     798 Undertøy
+     810 Dameklær
+     811 Herreklær
+     812 Sko
+     813 Sports-og fritidsklær
+     814 Ungdomsklær
+     1073 Accessoarer
+   706 Jernvare
+   756 Service
+     758 Helse/kroppspleie
+     759 Renserier
+     807 Frisører
+     808 Håndverkere
+     839 Vaskeri
+     1160 Bank
+     1247 Hytteservice
+     1248 Eiendomsmegler
+     1249 Ved
+     1251 Post i butikk
+   759 Fritid
+     1075 Jakt/Fiske
+     1402 Fiskekort
+     1403 Jaktkort
+   764 Utstyr
+     799 Barneutstyr
+     800 Glass/steintøy/porselen
+     801 Inventar/møbler
+     802 Jernvare
+     803 Reiseutstyr
+     804 Bil
+     805 Båt
+     806 Mc
+     1074 Hobby
+   765 Postordre
+   861 Håndtverk
+   870 Fabrikkutsalg
+   871 Markedshall
+   872 Shoppingsenter
+   873 Varehus
+   941 Taxfree
+   986 Vinmonopol
+   988 Lysstøperi
+   994 Blomster
+   995 Kjøretøy & Tilbehør
+     1102 Motorsykker/moped
+     1103 Båter
+     1104 Snøscooter
+     1105 Bilsalg
+     1106 Campingvogner
+     1107 Sykler
+     1338 Bilen
+   996 Innredning & tekstil
+     1108 Antikviteter
+     1109 Stoffer
+     1110 Gaver
+     1111 Porselen
+     1112 Møbler
+   997 Foto
+     1113 Fotografer
+     1114 Foto fremkalling
+   999 Musikk
+     1115 Platebutikk
+     1116 Detalj
+     1117 Musikk instrumenter
+   1000 Skjønnhet og helse
+     1118 Helsekost
+     1119 Parfymeri
+     1120 Hårpleie
+   1001 Sportsutstyr
+   1011 Gårdsbutikk
+   1031 Kunstgalleri
+   1037 Medlem
+   1060 Grossist
+   1063 Gartneri
+   1064 Kontorutstyr
+   1069 Design
+   1070 Annet
+     1246 Tipping
+     1253 Medisinutsalg
+   1071 Byshopping
+   1121 Torghandel
+   1136 Stormarked
+   1151 Bensinstasjon
+   1152 Kunsthåndverk
+   1160 Byggevarehandel
+     1407 Tre
+   1173 Almenninger
+     1405 Jakt/fiskekort
+   1193 Søndagsåpent
+   1199 Langdag
+   1208 For bussgrupper
+   1509 Økologisk
+   1524 Matutsalg
+   2404 Lokal mat
+   2689 Galleri
+   2691 Spa
+   2692 Vintage
+   2700 Sjokolade
+   2701 Øl
+   2827 Webbshop
+   2873 Slakter
+4 Tjenester
+   214 Bank
+   271 Turistinformasjon
+     755 Turistinformasjon i Norge
+     756 Turistinformasjon i Utlandet
+     1193 Autorisert Turistkontor grønn
+     1194 Turistkontor autorisasjon grønn
+     1195 Turistkontor autorisasjon rød
+     1275 Kommune
+     1276 Fylke
+     1277 Region
+     1342 Øst-Norge
+     1343 Sør-Norge
+     2908 Bemannet Turistinformasjon
+   450 Reisebyrå
+   588 Valuta
+   665 Trossamfunn
+     713 På fremmede språk
+     714 Jødisk
+     715 Protestantisk
+     716 Katolsk
+     718 Buddisme
+     719 Islamske
+     844 Frikirke
+   691 Kommunale tjenester
+     403 Skoler og universiteter
+     724 Bibliotek
+     843 Andre
+   712 Arrangør
+     725 Kongress
+     726 Messe
+     727 Begivenheter
+     728 Andre
+     739 Opplevelse
+     840 Festival
+     841 Idrett
+     842 Konsert
+     1359 Konferanse
+   715 Catering
+   716 Meglere
+     729 Eiendom
+   717 Turistforening
+   718 Advokat
+   719 Offentlige tjenester
+     733 Parkering
+     751 Arb.ungdom
+     752 Hittegods
+     754 Statlig info
+   720 Avis
+   725 Media
+   740 Turoperatør
+     1188 Innkommende
+   742 Postkontor
+   745 Konsulater
+   746 Legevakt
+   747 SOS Alarm nød og redning
+   748 Ambassade
+   749 Apotekvakt
+   750 Barnevakt
+   752 Friluft
+   753 Guideformidling
+   755 Tømmeplass
+   760 Andre tjenester
+   768 Forsikring
+   802 Vaskeselskap
+   836 Kompetansemiljø
+   837 Skole
+   848 Parkeringshus
+   850 Tolk
+   851 Reklamebyrå
+   863 Nyhet
+   914 Destinasjonsselskap
+   921 Revisor
+   922 Bilverksted
+   928 IT-selskap
+   929 Utdannelse
+   935 Behandlingssenter
+     1015 Massage
+     1016 Skjønnhetsbehandling
+     1052 Annet
+     1053 Spa
+     1054 Solarium
+     1055 Kurbad
+     1056 Bastu
+   955 Apotek
+   956 Bilbergning
+   957 Politi
+   959 Legesenter
+   960 Krise/Sosial hjelp
+   961 Veterinær
+   962 Kirke for reisende
+   970 Begravelsesbyrå
+   983 Båtverksted
+   984 Danseskole
+   985 Toaletter
+   998 Fotografer
+   1010 Teknikk
+   1051 Arrangør/booking
+     1204 Reisepakke
+   1066 Arkitekt
+   1083 Regnskapsfører
+   1086 Sykehus
+   1087 Eiendomsmegler
+     1265 Åremålshytte
+     1266 Tomter
+     1267 Hytter og Leiligheter
+   1090 Konsulentselskap
+   1099 Informasjonssenter
+   1102 Rasteplass
+   1117 Vaskeri
+   1156 PCO
+   1157 Arrangør/DMC
+   1158 Eventselskap
+   1163 Eiendomsutvikling
+   1164 Hytteformidling
+   1178 Taxi
+   1185 Forsikringsselskap
+   1430 Internet Café
+   1445 Arrangør/PCO
+   1481 Bibliotekbuss holdeplass
+   1486 Renovasjon
+   1487 Rørlegger
+   1488 Snekker
+   1489 Elektriker
+   1490 Kraftleverandører
+   1492 Murer/flislegger
+   1493 Blikkenslager
+   1494 Glassmester
+   1495 Tannlege
+   1520 Entreprenør
+   1521 Underholdning
+     2389 Musikk
+   1531 Minibank
+   2436 Frisør
+   2803 Rådgiver
+36 Aktiviteter
+   37 Skiaktiviteter
+   38 Vandringsturer m. guide
+     1396 Korte turer
+     1397 Heldagsturer
+     1398 Flerdagsturer
+     2372 Topptur sommer
+     2373 Topptur vinter
+   131 Fiske 
+   131 Fiske
+     452 Sport og fritidsfiskeanlegg
+     523 Isfiske
+     703 Havfiske
+     704 Laksefiske
+     705 Elvefiske
+     706 Ørretfiske
+     707 Fluefiske
+     734 Gjeddefiske
+     853 Spesialfiske
+     945 Innsjøfiske
+     946 Dyphavsfiske
+     947 Rennende vann
+     948 Kystfiske
+     949 Annet
+     1149 Sjøfiske
+     1150 Laks og Sjøørret
+     1151 Innlandsfiske
+     1165 Fjordfiske
+     1241 Fiskeguide
+     1416 Fiske camp
+     2357 Kongekrabbe - sommer
+     2360 Kongekrabbe - vinter
+     2493 Aborr
+     2494 Ål
+     2495 Bekkørret
+     2500 Sjøøret
+     2503 Suder
+     2505 Småtorsk
+     2509 Ferkvannsørret
+     2512 Sjøørrett
+     2754 Ferskvannsfiske
+   137 Jakt
+     994 Jakt kurser
+     995 Jakt med guide
+     1087 Elg
+     1088 Guidet Elgjakt
+     1152 Hjort
+     1153 Guidet Hjortejakt
+     1154 Rådyr
+     1156 Guidet Reinsdyrjakt
+     1157 Rype/Skogsfugl
+     1158 Hare
+     1159 Annen jakt
+     1191 Gåsejakt
+     1399 Storvilt
+     1400 Småvilt
+     2755 Guidet rype-/skogsfugljakt
+   148 Andre aktiviteter
+     1233 Spøkelser
+   392 Ridesenter
+   395 Aktivitetsselskaper
+   404 Guidet tur
+     1014 Naturguiding
+     1129 Park/hage
+     1130 Andre
+     1374 Kulturvandring
+     1380 Arkitektur
+     2470 Sykkel
+     2474 Sommer
+     2475 Vinter
+   417 Båtturer
+     735 Lunsj og kveldsturer
+     736 Sightseeing
+     737 Charterturer
+     943 Flåteturer
+     1164 Cruise
+     1236 Fisketur
+     2341 Elvebåttur
+     2471 RIB
+     2741 Båtturer
+   426 Byvandring/guiding
+   427 Vikingbyer
+   430 Aktivitetsgård
+   433 Safari
+     887 Hvalsafari
+     888 Elgsafari
+     889 Selsafari
+     890 Fuglesafari
+     1260 Ulvesafari
+     1261 Bjørnesafari
+     1274 Moskus safari
+     1375 Annet
+     1420 Beversafari
+     2339 Kongekrabbe - sommer
+     2340 Elvebåtsafari
+     2359 Kongekrabbe - vinter
+     2378 Snøscooter
+     2380 Fjord Safari
+     2734 Ørnesafari
+     2824 Foto
+     2926 Natursafari
+   434 Seter
+   440 Bedriftsbesøk
+   442 Familieparker
+   516 Gullvasking
+   518 Rundturer
+   519 Hundekjøring
+     2355 Sommer
+     2356 Vinter
+     2358 Kløvhund
+     2361 Besøkskennel
+   521 Reinkjøring
+   522 Hest og vogn
+   525 Samisk opplevelse
+     2363 Sommer
+     2364 Vinter
+   529 Seilas
+   632 Barn/familie
+     1021 Lek & Eventyrland
+   633 Folkedans
+   639 Idrettstevner
+   640 Kanefart
+   677 Opplevelsessenter
+   690 Sport
+     116 Seiling
+     121 Kano/padling
+     128 Golf
+     140 Bading
+     290 Vannsport
+     419 Dykking
+     428 Tennis
+     429 Gocart
+     431 Ridning
+     432 Bowling
+     443 Klatring
+     453 Rafting
+     635 Bridge
+     636 Laserskyting
+     638 Squash
+     643 Treningsstudio
+     644 Sykling
+     645 Fotball
+     722 Golfsimulator
+     738 Fallskjermhopping
+     741 Aking
+     742 Alpint
+     744 Langrenn
+     745 Snøscoter
+     746 Skisenter
+     747 Skiskole
+     748 Skøyter
+     864 Minigolf
+     865 Orientering
+     866 Ishockey
+     873 Boule
+     880 Hanggliding
+     881 Paragliding
+     883 Badminton
+     884 Bordtennis
+     951 Leirdueskyting
+     952 Motorsport
+     953 Paintball
+     955 Annet
+     1025 Innebandy
+     1044 Jogge løype
+     1045 Skyting
+     1046 Snowboard
+     1079 Brettseiling
+     1085 Skateboard
+     1121 Curling
+     1124 Friidrett
+     1126 Svømmehall
+     1237 Fotballgolf
+     1254 Biljard
+     1279 Luftsports anlegg
+     1284 Windsurfing
+     1298 Gokart
+     1299 Eventyrløype
+     1349 Kjelke
+     1372 Håndball
+     1378 Basketball
+     2335 Beach volleyball
+     2336 Volleyball
+     2337 Havrafting
+     2338 Surfing
+     2342 Skikiting
+     2349 Isklatring
+     2350 Strikkhopp
+     2354 Snøkiting
+     2398 Snorkling
+     2408 Skiskyting
+     2409 Snørafting
+     2472 Vannski
+     2473 Elvebrett
+     2733 Lysløyper
+     2744 Sykkel
+     2745 Sykkel
+     2749 Fiske
+     2752 ATV
+     2756 Havpadling
+     2759 Seilfly
+     2782 Kiting
+   707 Fjordtur
+   737 Brevandring
+   757 Sightseeing
+     914 Fly- Sightseeing
+     915 Undervanns- sightseeing
+     1303 Helikopter
+     2643 Natur
+     2644 Båt
+     2646 Sykkel
+     2647 Byrundtur
+     2648 Byvandring
+     2649 Rundtur
+     2650 Busstur
+     2652 Vikingskip
+     2653 Hest og vogn
+     2654 Guidet natursti
+     2655 Tog
+     2656 Vandring
+     2659 Bil
+     2661 Geocaching
+     2662 Energi, sunnhet og miljø
+     2751 Sightseeing
+     2757 Historisk vandring
+   775 Grotting
+   817 Forening/forbund
+   818 Dresinkjøring
+   822 Flytur
+   823 Utflukter med terrengkjøretøy
+   824 Øko-turer
+   825 Kjøreturer
+   826 Terrengridning
+   827 Villmarksopplevelser
+   853 Blåturer
+   854 Julebord
+   859 Bingo
+   875 Hest
+     1022 Ridning
+     1023 Islandshest ridning
+     1285 Ridecenter
+     1286 Hest og vogn
+     1339 Trav
+     1409 Turridning
+     2382 Hest & Slede
+   877 Åpne gårder
+   878 Overlevelseskurs
+   880 Underholdningsaktivitet
+     957 Annet
+     1019 Discotek
+     1238 Film
+     1239 Musikk
+     1240 Teater
+   913 Fjelltur
+   917 Vandring
+     1047 Vandring/sykkel stier
+     1393 Korte turer
+     1394 Heldagsturer
+     1395 Flerdagsturer
+     2371 Topptur sommer
+     2374 Topptur vinter
+     2800 Prosjekt vandring
+     2801 Byvandring
+   920 Aktivitetskurs
+     997 Kano
+   932 Veterantog
+   933 Bad
+     1018 Badehus
+     1020 Oppvarmet basseng
+     1141 Friluftsbad
+     1225 Badestamp
+     1234 Innendørs svømmebasseng
+     1235 Strand
+     2666 Badeland
+     2667 Vannland
+   934 Konferanse
+   936 Villmarkscamp
+   938 Taubane
+   953 Opplevelse
+     2383 I naturen
+     2384 På elv og vann
+     2385 I luften
+   958 Rekreasjon/behandlingssenter
+     1065 Badstue
+     1066 Kurbad
+     1067 Massage
+     1068 Skjønnhetsbehandling
+     1069 Solarium
+     1070 Spa
+     2381 Yoga
+   965 Turstier
+   966 Kyststier
+   974 Fuglekikking
+   982 Sykkelstier
+   993 Forsamling
+   1012 Golf
+     1288 Minigolf
+     1289 Pay & play
+   1013 Marked/Messe
+   1034 Kultur
+   1035 Motor
+   1036 Musikk
+   1054 Treningssenter
+   1059 Kurs
+     1208 Musikk
+     1209 Håndtverk
+     1211 Kunst
+     1212 Natur & Miljø
+     1213 Sport
+     1214 Vitenskap
+     1215 Litteratur
+     1219 Andre kurs
+     1220 Mat
+     1221 Barn/ungdom
+     1222 Dans
+     2825 Foto
+   1073 Steinalderby
+   1074 Vinteraktivitet
+     2407 Trugetur
+   1075 Sommeraktivitet
+   1077 Bær og sopplukking
+   1078 Lag og organisasjoner
+   1089 Natur
+     2348 Midnattssol
+   1118 Sommerskisenter
+   1120 Leirskole
+   1124 Båt
+     1292 Utleie
+     1293 Turer
+     1294 Seiling
+   1125 Sykkel
+     1295 Sykkelstier
+     1296 Utleie
+     1417 Sykkeltur
+     2469 Downhill
+     2753 BMX
+     2758 Mountain biking
+     2798 Prosjekt sykkel
+   1127 Kano/Kajakk
+   1128 Shopping
+   1133 Hagevandring
+   1137 Ridning
+   1140 Hest & Slede
+   1142 Internet Café
+   1159 Team building
+   1170 Bilvandring
+   1171 Kino
+   1182 Nordlysjakt
+     2873 Buss
+     2874 Båt
+     2875 Foto
+     2876 Minibuss
+   1184 Juleaktiviteter
+   1196 Pilgrimsvandring
+   1200 For bussgrupper
+   1206 Gruppeaktiviteter
+   1431 Dans
+   1462 Vikingskip
+   1463 Havkajakk
+   1466 Rafting
+     2379 Fjordrafting
+   1473 Bondegård/Fritidsgård
+   1475 Fossepadling
+   1478 Grenseopplevelse
+     2365 Sommer
+     2366 Vinter
+   1479 Fyr opplevelser
+     2369 Sommer
+     2370 Vinter
+   1480 Nordkapp opplevelse
+     2367 Sommer
+     2368 Vinter
+   1482 Mat & drikke
+   1483 Høstaktiviteter
+   1502 Juving
+   1503 Brehuletur
+   1507 Skøyter
+   1514 Vinsmaking
+   1517 Festival
+   1519 Innendørs lekeland
+     2387 Mini ATV crossbane
+     2388 Gå på vannet
+   1533 Reiserute
+   2428 Turer
+     2547 Sykkeltur
+     2548 Sykkelferie
+     2549 Fisketur
+     2551 Vandreture
+     2552 Vandreferier
+     2553 Guidede turer
+     2554 Sykkelturer
+     2555 Vandrerruter
+     2918 Kajakk ruter
+   2434 Turforslag
+   2556 Aktivitetspark
+   2558 Fornøyelsespark
+   2682 Turer på egenhånd
+   2685 Rappellering
+   2690 Øyhopping
+   2694 Flerdagsturer
+     2715 Camp
+     2716 Ski
+     2717 Båt
+     2718 Hundeslede
+   2696 Skisenter
+     2721 Barnepark
+     2722 Terrengparker
+   2735 Isbretur
+   2736 Skogtur
+   2737 Kulturarvtur
+   2738 Historisk tur
+   2739 Geologitur
+   2740 Skitur
+   2755 ATV turer
+   2756 Flora-Fauna turer
+   2757 RIB turer
+   2765 Snøscooter
+   2768 Padling
+   2769 Ski
+     2799 Prosjekt ski
+   2814 Alpinanlegg
+   2815 Langrennsanlegg
+   2826 Kajak
+   2828 Zip-line
+   2872 Nordlysopplevelser
+     2877 Hundekjøring
+     2878 Reinkjøring
+     2879 Snøskuter
+     2880 Hest
+     2881 Truger
+     2882 Mat
+     2883 Overnatting
+     2884 Nordlysbesøk
+     2906 Kunnskap
+     2907 Pakke
+   2886 Aktivitetsbaner
+   2928 Utflukter
+39 Arrangement
+   40 Håndtverk
+   41 Teater
+     2334 Sommerteater
+     2672 Musikal
+     2675 Skuespill
+     2888 Komedie
+     2889 Satire
+   42 Annen forestilling
+   46 Opera
+   48 Musikk
+     1429 Jazz
+     1430 Rock/pop
+     1431 Klassisk
+     1667 Alternativ musikk
+     1743 Etnisk
+     1763 Julekonsert
+     1764 Samtidsmusikk
+     1765 Visesang
+     1849 Kirkekonsert
+     1896 Allsang
+     1897 Folkemusikk
+     1898 Annet
+     1931 Korsang
+     1932 Gospel
+     2008 Blues
+     2134 Klubbmusikk
+     2191 Soul
+     2308 Hip Hop
+     2309 Country
+     2310 Electronica
+     2311 Hardrock/Metal
+     2312 Soul & RnB
+     2313 Techno & Trance
+     2314 World music
+     2328 Høyfjellskonsert
+     2891 Funk
+   55 Sport
+     819 Fotball
+     820 Volleyball
+     822 Håndball
+     823 Friidrett
+     832 Ski
+     833 Hestesport
+     834 Skøyter
+     835 Stevne
+     856 Turmarsj
+     857 Mosjonsløp
+     874 Ishockey
+     875 Andre idrettsarrangement
+     882 Fjelltur
+     917 Golf
+     918 Sykkel
+     923 Båtrace
+     924 Seiling
+     974 Motorsport
+     975 Orientering
+     976 Vann- & Båtsport
+     977 Hunde sport / Hundeløp
+     1049 Snowboard
+     1071 Skyting
+     1086 Skateboard
+     1128 Ski hopping
+     1273 Bowling
+     2719 Langrenn
+     2720 Skiskyting
+   63 Utstilling
+     1206 Kunst
+     1227 Barn
+     1323 Mote og Tekstil
+     1326 Grafisk design
+     1327 Håndtverk
+     1328 Smie
+     1329 Keramikk
+     1330 Glass
+     1351 Fortidshistorie
+     1352 Eldre historie
+     1353 Samtidshistorie
+     1354 Kirker
+     1355 Moderne arkitektur
+     1356 Eldre arkitektur
+     1358 Naturarv
+   68 Andre arrangement
+     1035 Håndtverk
+     1062 Fiske
+     1082 Julearrangement
+     1083 Museumsarrangement
+   323 Konsert
+     502 Jazz
+     503 Rock/pop
+     504 Klassisk
+     740 Alternativ musikk
+     836 Julekonsert
+     837 Samtidsmusikk
+     838 Visesang
+     922 Kirkekonsert
+     969 Allsang
+     970 Folkemusikk
+     971 Annet
+     1004 Korsang
+     1005 Gospel
+     1081 Blues
+     1207 Klubbmusikk
+     1263 Reggae
+     1264 Soul
+     1320 Hornmusikk
+     1381 Hip Hop
+     1382 Country
+     1383 Electronica
+     1384 Hardrock/Metal
+     1385 Soul & RnB
+     1386 Techno & Trance
+     1387 World music
+     2330 Punk
+     2331 Garagerock
+   350 Messe
+   402 Foredrag
+     961 Historie
+     962 Sunnhet og Helse
+     963 Kultur
+     964 Natur & Miljø
+     965 Reiser
+     966 Samfunn
+     967 Vitenskap
+     968 Annet
+   406 Folkekultur
+   407 Festival
+     1426 Filmfestival
+   679 Familie/barn
+     1139 Kulturpedagogisk virksomhet
+   680 Jubile
+   681 Religiøse arrangement
+     921 Gudstjeneste
+   682 Konferanse
+     2723 Internasjonal
+     2724 Nasjonal
+     2725 Europeisk
+     2726 Nordisk
+     2727 Skandinavisk
+   696 Revy
+   710 Guidet tur
+   726 Marked/Martna
+   734 Folkemusikk
+   738 Årlig arrangement
+   739 Store arrangement
+   741 Film
+     1311 Animert
+     1312 Dokumentar
+     1313 Kortfilm
+   770 Dans
+     978 Folkedans
+     979 Annet
+     1321 Moderne dans
+     1337 Verdensdans
+   771 Show
+   773 Ballett
+   777 Historisk spill
+   807 Fest
+   815 Midtsommer
+   820 Kabaret
+   866 Kino
+   869 Parade
+   888 Auksjon
+   889 Basar
+   890 Loppemarked
+   892 Musikal
+   893 Oppvisning
+   912 Båtturer
+   916 Natur og Hage
+   924 Folkedans
+   925 Møte
+   930 Kurs
+   950 Tur
+   954 Kvelds arrangement
+   978 Safari
+   979 Fiske
+   992 Underholdning
+   1006 Kulturarrangement
+   1022 Disco
+   1023 Rebusløp
+   1024 Organiserte vandringer
+   1026 Mat
+     2786 Middag med kjøtt
+     2787 Kveldsmat
+     2788 Arrangementer over flere dager
+     2789 Kulinariske eventyr
+     2790 Matkurs
+     2791 Barnearrangement
+     2792 Arrangementer utendørs
+     2793 Arrangementer utenfor byen
+     2794 Arrangementer med drikkevarer
+     2898 Dessert
+     2899 Fisk og skalldyr
+     2900 Sundt og klimavennlig
+   1039 Julebord
+   1045 Barneprogram
+   1046 Eventyrstund
+   1047 Barneteater
+   1049 Litteratur/ poesi
+     1316 Faktalitteratur
+     1317 Prosa
+     1318 Lyrik
+     1319 Barn & Ungdomslitteratur
+   1055 Seminar
+   1056 Debatt
+   1057 Kunst
+     1304 Fotografi
+     1305 Innstallation
+     1307 Maleri-grafikk-tegning
+     1308 Tekstilkunst
+   1062 Sirkus
+   1092 Klubb
+   1095 Kongress
+     1268 Internasjonal
+     1269 Nasjonal
+     1270 Europeisk
+     1271 Nordisk
+   1096 Varemesse
+     2729 Nasjonal
+   1114 Julearrangement
+   1150 100 års-jubileum
+   1154 17 mai arrangement
+   1162 Visninger
+   1172 Skuespill
+   1189 Shopping
+   1194 Standup
+   1195 Helse
+   1201 For bussgrupper
+   1439 Påske
+   1440 Valborg
+   1443 Nasjonaldag
+   1451 Julemarked
+   1452 Natur
+   1453 Hage
+   1454 Quiz
+   1499 Forfatteraften
+   1518 By vandringer
+   1534 Sightseeing
+   2400 Miljø
+   2411 Gudstjeneste
+   2422 Næringsliv
+   2681 Mote
+   2703 Politisk
+   2741 Senior
+   2759 Fortellinger
+   2761 Yoga
+   2762 Spill
+   2802 Møter
+   2934 Paradis for barn
+   3002 Folkefest
+   3003 Tivoli
+69 Attraksjoner
+   70 Naturattraksjon
+     197 Fjell
+     198 Fjord
+     199 Bre
+     200 Skog
+     299 Innsjø
+     394 Nasjonalparker
+     399 Dal
+     411 Friluftsområder
+     412 Våtmarksområder
+     413 Strand
+     425 Foss/elv
+     749 Midnattsol
+     847 Naturreservat
+     1029 Fjell -
+     1030 Bekk
+     1034 Fuglereservat
+     1122 Grotter
+     1123 Vann
+     1137 Andre
+     1147 Utsikt
+     1280 Naturfenomener
+     1287 Øy
+     1404 Juv
+     2347 Midnattssol
+     2386 Landskapsvernområde
+     2403 Regionalparker
+   171 Kulturtilbud
+   172 Kulturmiljø
+     891 Skulpturlandskap Nordland
+     892 Fotefar mot Nord
+     1281 Helleristninger/runer/skålegroper
+     1282 World Heritage List
+   236 Galleri
+   386 Severdighet
+     174 Arkitektur
+     398 Statuer/skulpturer
+     708 Andre severdigheter
+     960 Naturseverdigheter
+   396 Skulpturer
+   397 Minnesteiner
+   400 Informasjonssenter
+   401 Utstillinger
+     1133 Historie
+     1134 Kunst
+     1135 Andre
+     1224 Keramikk
+     1376 Foto
+     2333 Samleutstilling
+     2915 Natur
+   416 Andre attraksjoner
+     1136 Historie
+     1290 Håndtverk
+     2484 2.verdenskrig
+     2485 Atlanterhavsveien
+     2486 Kystliv
+     2487 Viking og fosnakultur
+     2488 Klippfisk
+   730 Bro
+   733 Festningsverk
+   743 Museum
+     1142 Bygdemuseum
+     1143 Historisk museum
+     1144 Kunst museum
+     1145 Teknisk museum
+     1146 Andre museum
+     1331 Fortidsmuseum
+     1332 Historiemuesum
+     2346 Sjøfartsmuseum
+     2598 Samling
+     2599 Mølle
+     2602 Minnestu
+     2603 Friluftsmuseum
+     2604 Fengselsmuseum
+     2605 Miniby
+     2671 Foto Museum
+   744 Kirke
+     1360 Stavkirke
+     1361 Middelalderkirke
+     1362 Moderne kirke
+     1363 Arbeidskirke
+     1364 Kapell
+     1367 Fjellkirke
+     2573 Landsbykirke
+     2574 Bykirke
+     2575 Domkirke
+     2576 Sognekirke
+     2577 Katolsk kirke
+     2581 Rundkirke
+     2586 Moske
+     2587 Veikirke
+   800 Seter
+   801 Bygning/Kulturmiljø
+     1031 Minnebygning
+     1132 Historiske bygninger/miljø
+   810 Arkitektur
+     1334 Moderne arkitektur
+     1335 Gammel arkitektur
+   814 Kunstverk
+   819 Opplevelsessenter
+     1422 Film
+   844 Dyrepark
+   852 Ruiner
+   856 Urtegård
+   881 Park/Haver
+     1229 Park
+     1230 Hage
+     1242 Botanisk hage/arboretum
+     2564 Blomsterpark
+     2565 Bypark
+     2566 Skulpturpark
+     2567 Åpen besøkshave
+     2568 Kirkegård
+     2571 Botanisk hag
+     2572 Naturpark
+   882 Kloster
+   883 Natur
+     958 Utsikter
+     959 Innsjøer
+     2612 Skog
+     2616 Strand
+     2617 Bakker
+     2618 Sanddyner
+     2619 Øy
+     2620 Dal
+     2621 Sjø
+     2622 Fjord
+     2624 Bukt
+     2625 Eng
+     2627 Naturreservat
+     2628 Voksested for historiske trær
+     2629 Øy
+     2634 Voksested for spesielle vekstformer
+     2637 Naturpark
+   885 Slott / Borger
+   886 Fortidsminne
+   887 Antikviteter
+   944 Utsiktstårn
+   972 Kulturminne
+   987 Gruve
+   1002 Utsikter
+   1029 Glassverk
+   1044 Fortidsby
+   1079 Kultursenter
+   1080 Monument
+     2590 Vannkunst
+     2591 Minnesmerke
+     2592 Statue
+     2593 Skulptur
+     2594 Landemerke
+   1081 Nasjonalparksenter
+   1082 Havn
+   1085 Barn/Familie
+   1093 Vannkilde
+   1112 Gårdsanlegg/herregård
+   1113 Opera
+   1126 Konferanse
+   1129 Tema Park
+     1300 Dyreparker
+     1301 Fornøyelsespark
+     1302 Opplevelsessenter
+     2669 Vikingtid
+   1183 Kunsthall
+   1197 Gravhaug
+   1203 For bussgrupper
+   1207 Kino
+   1212 Naturreservat
+   1428 Innspillingsplasser
+     1428 Film
+     2397 TV-serie
+   1433 Fyr
+   1435 Litteratur
+   1510 Samisk kultur
+   1512 Fiskevær
+   1516 Nasjonal Turistvei
+   1529 Veterantog
+   1530 Veteranbåt
+   2401 Kunstrunde
+   2409 Akvarium
+   2429 Sightseeing
+   2435 Bedriftsbesøk
+     2517 Håndverk
+     2518 Mat
+     2519 Kunstindustri
+     2520 Besøksgård
+     2521 Gårdsbutikk
+     2522 Landbruk
+     2523 Kultur
+     2524 Bryggeri
+     2528 Meieri
+     2529 Fruktgård
+   2560 Fornøyelsespark
+   2606 Besøkssenter
+   2607 Science senter
+   2608 Observatorium
+   2609 Planetarium
+   2640 Bautasten
+   2641 Oldtidsvei
+   2767 Gårdsbutikk
+   2809 Kunsthåndverk
+   2810 Kulturhus
+   2816 Lokale smaksopplevelser
+   2876 Kjente personer
+99 Transport
+   436 Busselskaper
+     1258 Regionale
+     1259 Lokale
+   437 Ferjeselskaper
+   438 Flyselskaper
+   439 Tog
+   508 Hurtigruten
+   509 Hurtigbåter
+   649 Sporveistakster
+   650 Hovedkontor/sentral
+   651 Sightseeing
+   652 Drosjeholdeplasser
+   693 Taxi
+   722 Bensinstasjon
+   723 Bil
+   758 Rutetider 
+   758 Rutetider
+     768 Lokalt
+     769 Utenbys
+     771 Utenlands
+   973 Flyplass
+   1014 Flybuss
+   1021 Offentlig transport
+   1048 Båt
+   1050 Turbusser
+   1065 Rederi
+   1067 Frakt
+   1072 Bomvei
+   1088 Skibuss
+   1134 Helikopter
+   1436 Parkering
+110 Sted
+   83 Kino
+   84 Amfiscene
+   159 Idrettsanlegg
+   168 Utstillingslokale
+   211 Sentrum
+   215 Fritidspark
+   221 Annet sted
+   244 Kurs/møte/konferansesenter
+   276 Jernbanestasjon
+   277 Flyplass
+   329 Konsert/teatersal
+   330 Konsertsal
+   331 Teater
+   348 Sentrum
+   405 Konferansesenter
+   409 Museumslokale
+   418 Gjestehavn
+   418 Gjestehavn 
+   678 Kommune
+   709 Badeplass
+   724 Fyr
+   731 Torg
+   732 Fort
+   799 Tettsted
+   812 By / storby
+   821 Uthavn
+   879 Bad
+   884 Friluftsområde
+   939 Øy
+   951 Klubbhus
+   981 Bibliotek
+   1020 Skisenter
+   1058 Klubb
+   1084 Selskapslokaler
+   1094 Skjærgård
+   1103 Fergekai/hurtigbåtanløp
+   1105 Tunell
+   1110 Nasjonale Anlegg
+   1165 Bro
+   1167 Bussterminal
+   1169 Bygd
+   1176 Marina
+   1192 Reisemål
+   1471 Kongressenter/Messehall
+   1472 Kurs- og konferanseanlegg
+   1513 Fiskevær
+   1532 Havn
+   2417 Spesielle møtesteder
+   2430 Kulturhus
+   2437 Strand
+     2663 Sandstrand
+   2532 Arkitektonisk interessant
+   2541 Gård
+   2544 Aktivitetshus
+   2670 Spa
+   2686 Kirke
+   2687 Lekeplass
+   2695 Sykkeldestinasjon
+   2697 Langrennsdestinasjon
+   2882 Bålplass
+203 Reisepakke
+   204 Bil
+   205 Buss
+   206 Båt
+   207 Tog
+   727 Fly
+   728 Sykkel
+   729 Golf
+   894 Bypakke
+   895 Mat
+   896 Hageanlegg / parker
+   897 Fiske
+   898 Kunst
+   899 Riding
+   901 Vandring
+   902 Kropp & Sjel
+   927 Overnatting
+     1008 Hytter
+     1009 Hotell
+     1010 Vandrerhjem
+     1011 Leiligheter
+     1012 Rom
+   1009 Familie / barn
+   1028 Programpakke
+     1169 Miljø
+     1172 Kultur
+     1177 Fiskeri
+     1184 Forskning
+     1223 Nordlys
+   1130 Musikk
+   1131 Kultur
+   1132 Sport
+   1174 Konferanse
+   1175 Arrangment
+   1179 Aktivitet
+   1180 Weekend
+   1181 Underholdning
+   1444 Jul
+   1464 Turistkort
+   1465 Natur
+   1484 Kano
+   1485 Grupper
+   1500 Ski
+   1501 Safari
+   1515 Spa
+400 Utleie
+   699 Bobil
+   702 Buss
+   708 Bil
+     772 Limousine
+     773 Liten bil
+     774 Stor bil
+     775 Medium bil
+     776 Varebil
+     777 Økonomibil
+   736 Annen utleie
+     750 Kano
+     780 Bunad
+     782 Klær
+     783 Redningsvest
+     784 Rullestol
+     785 Ski,skøyter,etc
+     869 Ekkolodd
+   761 Båt
+     848 Kano
+     928 Kajakk
+     929 Robåt
+     930 Motorbåt
+     931 Seilbåt
+     932 Yacht
+     933 Charter
+   762 Hytte
+   763 Sykkelutleie
+     894 Barnesykkel m. 3 gear
+     895 Sykkel m. 3 gear
+     898 Sykkel m. 7 gear
+     899 Mountainbike/barn
+     900 Mountainbike
+     901 Tandemsykkel
+     902 Sykkelvogn
+     903 Sykkelhjelm
+     905 Sykkel barnevogn
+     906 Sykkelsete for barn
+     907 Telt
+     910 Sykkel pakke
+     912 Mountainbike pakke
+     1127 Bysykkel
+   813 Vinter
+     849 Ski
+     850 Skøyter
+     851 Spark
+     852 Snowboard
+     934 Kjelke
+     935 Truger
+     1027 Slalomutstyr
+     1028 Langrenn ski
+     1050 Pulk
+   860 Leilighet
+   905 Campingvogn
+   908 Rom
+   943 Idrettshall
+   971 Lokale
+     1410 Utstillingslokale
+     1411 Selskapslokaler
+     1412 Konferanselokaler
+   1019 Helikopter
+   1032 Snøscooter
+   1115 Fiskeutstyr
+   1116 Skiutstyr
+   1168 Kano/Kajak
+   1497 Lavvo
+402 Produksjon
+   803 Kunst & Håndverk
+     986 Saueskinn
+     989 Lysstøperi
+     991 Stein
+     992 Tekstil
+     1077 Glass
+     1078 Keramikk
+     1166 Annet
+   804 Matvarer
+     1226 Meieri
+     1245 Spesialiteter
+   805 Keramikk
+   806 Annen produksjon
+   816 Glass
+   947 Tømmerhus
+   1033 Trykkeri
+   1040 Tre
+   1041 Stein
+   1091 Industri
+   1205 Konferanse
+   1211 For bussgrupper
+   1448 Drikke
+   1498 Sølvvarer
+403 Prosjekt
+   835 Andre prosjekt
+404 Matkultur
+   839 Fisk
+   840 Kjøtt
+   843 Bakverk
+   1209 Ost
+   1447 Drikke
+   1522 Matproduksjon
+     2395 Lokal mat
+   1525 Bær
+   1526 Frukt
+   1527 Grønnsaker
+405 Generelle kategorier
+   868 Annonse
+     919 Logo annonse
+     920 Oppdaterbare sider
+   975 Badetemperatur
+   990 Oppdaterbare sider
+     1089 Start side
+     1090 Overnatting
+     1091 Aktiviteter
+     1092 Arrangement
+     1093 Forretninger-Service
+     1094 Attraksjoner
+     1095 Sted
+     1097 Servering
+     1099 Transport
+     1406 Brosjyrer
+   1005 Bildegalleri
+   1139 Spesialtilbud
+     1340 Andre
+   1141 Nyheter
+     2411 Turistnyhet
+   1505 Linker
+   1506 Tekstside
+   2414 Salgsprodukter
+     2440 Bøker
+     2442 Souvenirer
+     2443 Tekstiler

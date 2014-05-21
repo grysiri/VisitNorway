@@ -1,0 +1,1936 @@
+5 Aktiviteter
+ 1565 badeland
+ 1226 bølgebasseng
+ 933 oppvarmet svømmebasseng
+ 1249 vanngymnastikk
+ 786 vannsklie
+ 649 underholdning
+ 851 utstilling
+ 785 stupebrett
+ 736 dyrekikking
+ 304 fritidsfiske
+ 1514 festival
+ 1002 gocart
+ 659 kurs
+ 1532 konferanse
+ 657 konserter
+ 279 minigolf
+ 305 bading
+ 499 barneaktiviteter
+ 646 løping
+ 852 revy
+ 829 idrettshall
+ 864 aktivitetsløype
+ 275 innsjøfiske
+ 290 kanopadling
+ 985 helse spa/club
+ 1534 seminar
+ 1091 varmt bad
+ 1061 fiskemuligheter
+ 1163 gårdsferie
+ 750 kan være med på dyrestell
+ 263 ridning
+ 1136 paintball
+ 1083 fotturer
+ 532 klatring
+ 747 guidede turer
+ 1597 guiding
+ 1137 skyting
+ 905 fiske i vann
+ 379 fjellvandring
+ 1216 sopplukking
+ 748 turstier
+ 654 barneshow
+ 656 dans
+ 650 tivoli
+ 1342 plass for grilling
+ 1703 utendørs
+ 2183 utendørs aktivitetsområde
+ 730 båtturer
+ 813 fjordfiske
+ 274 havfisketurer
+ 896 saltvannsfiske
+ 867 aking
+ 631 fjellriding
+ 324 hundespannkjøring
+ 325 kanefart
+ 1333 rebusløp
+ 419 friluftscene
+ 1031 piknikbord
+ 412 sykkeltur
+ 658 oppvisning
+ 645 sykling
+ 1644 severdigheteter
+ 1516 utendørsarrangement
+ 1252 fiskekort
+ 732 regatta
+ 733 seiling
+ 380 byvandring
+ 382 spasertur
+ 321 sjøbading
+ 268 elvebading
+ 273 fiske i elv
+ 1492 treningssenter
+ 632 baneriding
+ 751 rideskole
+ 761 barn/ungdom alene
+ 643 folkedans
+ 648 marked
+ 1533 messe
+ 651 salgsboder
+ 660 salgsmesse
+ 1262 ishall
+ 498 skøytebane
+ 863 lerdueskyting
+ 865 natursti
+ 1049 rideturer
+ 381 skogstur
+ 634 hest og vogn
+ 1107 friluftsbad/havbad
+ 686 paragliding
+ 157 båt til disposisjon
+ 895 ferskvannsfiske
+ 286 padling
+ 731 roturer
+ 435 turlangrenn
+ 287 innsjøpadling
+ 850 foredrag
+ 1179 preparerte løyper på området
+ 288 kajakkpadling
+ 1230 bærplukking
+ 1056 fuglesafari
+ 1367 bandy
+ 1158 kultursti
+ 1869 historisk vandring
+ 1589 snøscooter
+ 1698 teambuilding
+ 735 beversafari
+ 737 elgsafari
+ 276 isfiske
+ 1248 aerobic
+ 1047 urtegård
+ 1579 leirskole
+ 74 ridehest
+ 1167 stangfiske
+ 1008 fritidsaktiviteter
+ 870 isbading
+ 1212 snøscootersafari
+ 272 vannskikjøring
+ 291 rafting
+ 894 opera
+ 1166 garnfiske
+ 904 fiske i sjø
+ 868 gruppeutvikling
+ 906 fluefiske
+ 1213 badestamp ute
+ 1410 guide
+ 1217 terrengbilkjøring
+ 1847 sport
+ 1164 barnas gård
+ 1365 husker
+ 1348 vedbadstu
+ 1347 sledeturer
+ 2066 velegnet til kitesurfing
+ 3389 hester kan medbringes
+ 2341 aktiviteter tilbys
+ 2791 naturskole
+ 756 rideutstyr
+ 520 brevandring
+ 703 oterfiske
+ 474 trimløype
+ 530 grotting
+ 1358 antall løyper
+ 1994 mulighet for spill
+ 1884 spesialturer arrangeres
+ 1702 innendørs
+ 1366 ishockey
+ 1229 flåtetur
+ 1695 pedalbåt
+ 1250 spinning
+ 1697 helikopter
+ 1168 juv-vandring / juving
+ 1135 laserskyting
+ 869 scooterturer
+ 2865 lekeland
+ 535 isklatring
+ 687 hanggliding
+ 21 gårdsarbeid
+ 990 spilleautomater
+ 2943 aktiviteter inkl. i entréprisen
+ 798 fritidspark/sommerland
+ 1535 opplesning
+ 749 kan være med på stølsdrift
+ 1566 badeland, mini
+ 1009 filmer til leie
+ 871 figursti
+ 2002 zoo for barn
+ 293 fjordseilas
+ 1012 bolter i fjellet
+ 1874 vanntrampoline
+ 979 tyrkisk bad
+ 1287 elektroniske spill
+ 1078 piknik
+ 277 laksefiske
+ 1585 grønne arrangement
+ 295 innsjøseilas
+ 866 slusing
+ 1588 frisbeegolf
+ 289 kanalpadling
+ 2064 barnevennlig strand
+ 652 trylleshow
+ 2955 ballbane
+ 1055 selsafari
+ 1288 filmer gratis
+ 3023 utendørs ballbane
+ 653 vannskishow
+ 1995 spesialle nattarrangementer
+ 2001 sportshall
+ 3387 adgang fra sjøen
+ 3408 selvguidet
+ 1590 eventyrsgolf
+ 294 havseilas
+ 1218 elvefiske
+ 2067 badebro
+ 3447 urteplukking
+ 1515 teater
+ 644 kappleik
+ 1165 hovfiske
+ 1448 storbåtfiske
+ 1054 hvalsafari
+ 1868 selvplukk
+ 2064 Barnevennlig strand
+ 797 seilflyving
+ 946 spesialfiske
+
+74 Kirketyper
+ 1145 middelalderkirke
+ 558 trekirke
+ 559 tømret kirke
+ 563 langkirke
+ 565 steinkirke
+ 560 stavkirke
+ 562 korskirke
+ 1828 kirke
+ 561 katolsk kirke
+
+1 Generelle fasiliteter
+ 1081 turistinformasjon
+ 43 butikk
+ 420 pub
+ 39 telefon
+ 26 lekeplass
+ 167 wc
+ 1363 brygge
+ 42 kiosk
+ 1430 familievennlig
+ 421 selskapslokaler
+ 1075 bibliotek
+ 1525 uteservering
+ 1247 bakeri
+ 695 gatekjøkken
+ 2 parkeringsplass
+ 1053 barnebasseng
+ 266 bassengbading
+ 1063 konferansefasiliteter
+ 949 matservering
+ 2164 parkeringsplass ute - gratis
+ 1591 trådløst internett
+ 1329 internett
+ 1762 vaskerom
+ 358 bar
+ 44 kafé
+ 160 levende musikk
+ 1100 festlokaler
+ 1064 kursfasiliteter
+ 1496 åpent hele året
+ 922 konferansemuligheter
+ 1360 servering
+ 2161 gateparkering
+ 150 heis
+ 489 kabel-tv
+ 46 oppholdsrom
+ 169 resepsjon
+ 152 badstue
+ 2171 hage
+ 149 restaurant
+ 161 treningsrom
+ 752 serveringstilbud
+ 1663 gratis parkering
+ 1104 frokostbuffé
+ 1181 barnevennlig
+ 1052 badebasseng
+ 1915 bord / benker
+ 23 svømmebasseng/inne
+ 75 svømmebasseng/ute
+ 724 egen brygge
+ 2269 24 resepsjon
+ 2087 internett-tilgang i fellesområde
+ 2165 parkeringsplass ute - avgiftsbelagt
+ 1066 modernisert de siste 5 årene
+ 323 lekerom
+ 1662 Spa
+ 340 boblebad
+ 1423 peis i lobbyen
+ 1502 WLAN
+ 1034 reservasjon mulig
+ 3008 Restaurant/Cafe
+ 1364 båthavn
+ 2342 Kino
+ 1483 vinkjeller
+ 352 garasje
+ 1327 andre åpningstider etter avtale
+ 1093 sesong
+ 1497 åpent utenom åpningstid, etter avtale
+ 217 Café/Cafeteria
+ 1384 bordservering
+ 1857 avstander i minutter til flyplass
+ 967 gjestetelefon
+ 3 parkering for buss og lastebil
+ 153 solarium
+ 7 tørketrommel
+ 1005 e-post
+ 1013 rekreasjonsfasiliteter
+ 1102 dansegulv
+ 1042 ildsted
+ 14 stellerom
+ 1036 åpent deler av året
+ 220 banktjeneste/veksling
+ 1153 Røyking ikke tillatt
+ 2180 valutaveksling
+ 221 vask/rens av klær
+ 1152 frokost inkludert
+ 931 hunder tillatt
+ 1029 offentlig telefon
+ 2162 innendørsparkering - avgiftsbelagt
+ 1004 faks
+ 982 parkering for buss
+ 1253 utemøbler
+ 1189 uteplass
+ 1513 lobbybar
+ 73 gjestegarasje
+ 681 massasjerom
+ 219 roomservice
+ 1654 chambre separée
+ 490 solterrasse
+ 1394 egen strandlinje
+ 1395 egen kai/brygge
+ 1311 casino
+ 336 diskotek
+ 335 nattklubb
+ 2172 Spillerom
+ 1435 parkering - innelukket område
+ 1188 røyking kun tillatt ute
+ 1010 minibank
+ 1765 live musikk
+ 1411 full pensjon
+ 378 spisesal
+ 1101 arbeidsplass
+ 2167 bagasjerom
+ 24 plaskebasseng
+ 1025 nattestengt
+ 1586 vektertjeneste
+ 1592 internettcafé
+ 809 internasjonalt
+ 935 barnepass
+ 1028 kjæledyr ikke tillatt
+ 1264 ISDN
+ 2101 antall sitteplasser ute
+ 2100 antall sitteplasser inne
+ 1861 lounge
+ 1568 kjæledyr tillatt
+ 1701 dyr tillatt
+ 2173 nistepakke
+ 2182 sykler til utlån
+ 1553 utegrill
+ 2979 gratis wifi
+ 2181 lekeområde
+ 2122 sjekk inn tid:
+ 2123 sjekk ut tid:
+ 1278 peis - offentlig
+ 1529 omvisning av anlegget
+ 932 hunder/pelsdyr ikke tillatt
+ 1180 motorvarmer
+ 1405 parabol
+ 1258 åpen peis
+ 3022 Tv-stue
+ 2333 peisestue
+ 1421 avstand fra parkering
+ 2000 utendørs grill
+ 1604 jacuzzi
+ 2174 barnestol tilgjengelig
+ 1215 leker
+ 1422 parkering for trailere
+ 1528 røkfritt område
+ 1343 badebrygge
+ 1687 togstasjon
+ 1103 buffé
+ 1996 frokost kan kjøpes
+ 2174 Barnestol tilgjengelig
+ 1493 wc og dusj/bad på rommet
+ 1371 peis/ovn
+ 1389 terrasse
+ 48 TV
+ 1601 kapell for vielse
+ 986 Whirlpool
+ 2170 skyttelbuss skibakke
+ 2163 innendørsparkering - gratis
+ 1512 pianobar
+ 1768 pay-tv
+ 1498 ikke alle hytter har alle fasiliteter
+ 1587 hot tub
+ 1437 skyttelbuss flyplass
+ 1068 flyplass
+ 1862 relaxavdeling
+ 1856 avstand fra flyplass i km.
+ 988 vinmonopol
+ 1842 transport
+ 2334 sluttrengjøring inkludert
+ 3193 WIFI
+ 1086 røyking tillatt på avgrenset område
+ 2160 ladestasjon for el-bil
+ 2168 låsbare skap
+ 929 quick stop
+ 1658 shop
+ 2184 røykerom tilgjengelig
+ 760 eget kjæledyr
+ 2275 bagasjetransport
+ 2004 babybasseng
+ 2335 sluttrengjøring kan bestilles
+ 1099 orkester
+ 3393 fiskekort
+ 3012 wellness
+ 1276 nøkkelkort
+ 1450 GPS
+ 1486 internettkiosk
+ 980 bagasjehåndtering
+ 3003 Parkeringsplasser for bobiler
+ 1037 røyking tillatt
+ 19 dusj / varmt vann
+ 47 farge-tv
+ 50 radio
+ 1257 x motorvarmer
+ 1079 politi
+ 37 bilvaskeplass
+ 1593 varighet
+ 1406 tyske tv-kanaler
+ 1464 havbad
+ 1501 akvarium
+ 3019 egen inngang
+ 2762 spa-basseng
+ 3376 ombygget
+ 3197 hems
+ 893 fjordutsikt
+ 2802 parkering med overvåkning
+ 2265 scene
+ 1039 VCR
+ 1876 servicepersonell
+ 1592 Internettcafé
+ 1074 sykehus
+ 1280 varmet parkering
+ 3020 business center
+ 3442 Hjertestarter
+
+49 Reisepakke
+ 1583 arrangement
+ 1115 firma arrangement
+ 1204 grupper
+ 1584 aktiviteter
+ 884 hel- og halvdagstur
+ 1117 julebord
+ 885 kveldsarrangement
+ 225 dans
+ 227 sightseeing
+ 886 lunsjarrangement
+ 1489 skoletur
+ 1116 tematur
+
+104 Prisnivå
+ 1666 høyt
+ 1664 lavt
+ 1665 middels
+ 1878 gratis
+ 2338 prisnivå 2
+ 2340 prisnivå 4
+
+70 Forretningstilbud
+ 1578 drivstoff
+ 962 apotek
+ 1199 kunst
+ 515 suvenirer
+ 514 gullsmed
+ 1003 håndverk
+ 1465 autorisert turistkontor
+ 861 kiosk
+ 571 blomster
+ 512 bokhandel
+ 575 dyrebutikk
+ 513 fotobutikk
+ 569 frisør
+ 578 kjøkkenavdeling
+ 547 klesforretning
+ 516 kunsthåndverk
+ 546 leketøy
+ 510 matvarer
+ 519 musikk
+ 548 møbler
+ 570 parfymeri
+ 550 sko
+ 549 sportsforretning
+ 941 storkiosk
+ 574 vinmonopol
+ 1200 glass
+ 862 husflid
+ 1169 forretningssentrum
+ 1071 torghandel
+ 511 antikviteter
+ 1198 smykker
+ 1073 varehus
+ 577 porselensavdeling
+ 545 torg
+ 576 hattebutikk
+ 1393 bensinstasjon
+ 1506 fisk og skalldyr
+ 1824 gårdsbutikk
+ 1451 frisørsalong
+ 1162 salg av hyttetomter
+ 839 gartneri
+ 1161 salg av ved og trevirke
+ 2870 strikk og broderi
+ 568 datasenter
+ 2944 andre spesialforretninger
+ 1432 driftsselskap
+ 2869 kunstbøker
+
+3 Kjøkken og hushold
+ 1072 gass
+ 897 elektrisk komfyr
+ 900 kjøleskap
+ 488 oppvaskmaskin
+ 816 felles frysemuligheter
+ 719 mikrobølgeovn
+ 8 oppvaskkum / kaldt vann
+ 9 oppvaskkum / varmt vann
+ 218 selvhusholdning
+ 1065 sengetøy til leie
+ 11 spiseplass
+ 899 stekeovn
+ 467 utegrill
+ 6 vaskemaskin
+ 1032 propan
+ 10 kokemulighet
+ 1082 offentlig toalett
+ 902 kjøkken tilgjengelig
+ 1236 felles kjøkken
+ 688 minikjøkken
+ 815 fryseboks (egen)
+ 1351 brødrister
+ 1427 kjøleskap - på alle rom
+ 1426 kjøleskap på noen rom
+ 742 tilgang til kjøkken
+ 1461 vaskerom - myntmaskiner
+ 918 innlagt kald og varmt vann
+ 1349 kaffetrakter
+ 1997 dele baderom
+ 3436 kjøkken
+ 1396 sløyeplass for fisk ute
+ 1359 vedovn
+ 1831 kjøkkenutstyr
+ 1350 fryser
+ 16 servant / kaldt vann
+ 479 servant / varmt vann
+ 1259 tørkeskap
+ 1022 ovn
+ 5 vaskekum / varmt vann
+ 1033 søppelbøtter
+ 1361 husgeråd
+ 1404 v-k vann
+ 1048 mini kjøkken
+ 1080 offentlig vaskerom
+ 1434 mikrobølgeovn på alle rom
+ 1397 sløyeplass for fisk inne
+ 725 område til rensing/behandling av fisk
+ 987 gratis kaffe på rommet
+ 1368 vannkran - kaldt vann
+ 4 vaskekum / kaldt vann
+ 17 kabinett/varmt vann
+ 812 røykeovn for fisk
+ 1026 tøyvask
+ 1023 oppfyring
+ 1471 gassprimus
+ 1092 husholdningspris
+
+95 Havnefasiliteter
+ 1006 bensin
+ 966 diesel
+ 951 søppelcontainer
+ 1714 toalett
+ 956 mastekran
+ 1711 vaskemaskin
+ 1110 gjestehavn
+ 1713 sanitæranlegg
+ 1112 tilgang til strøm
+ 1712 tørketrommel
+ 1111 båtslipp
+ 1976 grillplass
+ 1109 marina
+ 1113 vinterleie
+ 814 ekkolodd
+ 961 legevakt
+ 954 motorservice
+ 955 plastreperasjoner
+ 960 postkontor
+ 958 rigg- og seilservice
+ 957 spilloljetømming
+ 953 tilhengerrampe
+ 959 luftfylling
+ 952 septikktømming
+ 1325 stasjonær kran
+ 1764 strøm
+ 962 apotek
+ 1045 bolter i fjellet
+ 1977 innkjøp
+ 1763 gass
+ 1704 kortautomat for drivstoff
+ 1044 bøyer
+
+105 Spesial
+ 950 vann
+ 2147 ved kysten
+ 2157 bysentrum
+ 2155 byområde
+ 2146 ved fjorden
+ 2159 boligområde
+ 2149 landbruksområde
+ 2156 forstadsområde
+ 2145 flyplassområde
+ 2158 skogsområde
+ 2127 smak av kysten
+ 2177 gård i drift
+ 1912 tilgjengelig med offentlige transportmidler
+ 1840 design
+ 2148 fjellområde
+ 2150 innsjøområde
+ 1999 øko produkter brukes delvis
+ 1846 arkitektur
+ 1838 attraksjoner
+ 2154 ved elv i dalbunn
+ 1983 innenriksflyvning
+ 1984 utenriksflyvning
+ 1971 medbragt mat tillat
+ 2222 nasjonalpark
+ 2223 vidde
+ 2332 bygdesentrum
+ 2129 håndplukket
+ 1843 sykkelby
+ 2197 indre by
+ 2221 isbre
+ 2200 ved flyplassen
+ 2198 utkanten av byen
+ 2954 billetter ved inngangen
+ 983 kommisjon for reisebyråer
+ 1841 uteliv
+
+11 Skjenkerettigheter
+ 70 øl og vin
+ 943 matservering med øl og vinrettigheter
+ 944 matservering med alle rettigheter
+ 69 alle rettigheter
+ 1007 restaurant med skjenkerettigheter
+ 317 alkoholfritt
+ 1235 fullstendige rettigheter i lukkede selskaper
+ 71 øl
+ 1286 sportsbar
+
+122 Romfasiliteter
+ 52 dusj
+ 1373 kjøkken
+ 48 TV
+ 394 musikkanlegg
+ 389 buksepresse
+ 1524 internett på rommet
+ 49 minibar
+ 395 safe
+ 1493 wc og dusj/bad på rommet
+ 893 fjordutsikt
+ 1108 bad på rommet
+ 1523 TV på rommet
+ 390 hårføner
+ 1390 balkong
+ 1305 allergirom
+ 19 dusj / varmt vann
+ 892 familierom
+ 948 badekar
+ 72 røykfrie rom
+ 50 radio
+ 51 video
+ 817 satellitt-tv
+ 396 Klimaanlegg
+ 1282 strykejern/strykebrett på værelset
+ 978 kabel-tv
+ 1389 terrasse
+ 397 rom for allergikere
+ 1371 peis/ovn
+ 1436 safe - på rommet
+ 216 ikke alle rom har alle fasiliteter
+ 36 strykejern
+ 391 datalinje til pc
+ 1848 vannkoker
+ 3328 sofa
+ 1485 rom m/internettilgang
+ 981 balkong
+ 47 farge-tv
+ 1391 hagemøbler
+ 2949 bad
+ 491 separate soverom
+ 1176 dobbeltseng
+ 1494 wc og dusj/bad på rommet, (ikke på alle rom)
+ 1362 balkong
+ 1661 sengetøy
+ 2175 babyseng tilgjengelig
+ 1660 håndkle
+ 2790 barneseng
+ 1452 ikke TV på rommene
+ 1424 peis på noen rom
+ 1453 ikke telefon på rommet
+ 1035 rom uten telefon
+ 1330 rom m/høyhastighets internettilgang
+ 1175 tvillingsenger
+ 1279 værelse med peis
+ 1429 boblebad på noen rom
+ 1425 peis på alle rom
+ 1554 havsutsikt
+ 1375 boareal
+ 1407 stereoanlegg
+ 1281 værelse med hurtig Internettforbindelse
+
+92 Natur og terreng
+ 880 badeplass
+ 882 strand
+ 126 skog
+ 1187 strand
+ 1641 landlig
+ 388 vann
+ 554 fotturområde
+ 30 gode leforhold
+ 1202 badestrand
+ 881 skogsområde
+ 555 turskiområde
+ 1401 elv
+ 129 elv
+ 883 skjærgård
+ 28 gresslette
+ 1118 kupert
+ 1122 lett
+ 386 sandstrand
+ 556 sportsfiske
+ 1400 vann/tjern
+ 1120 ås
+ 923 eng
+ 127 myr
+ 926 blandingsskog
+ 746 geologiske forekomster
+ 1119 bratt
+ 1206 helleristninger
+ 1399 hav/fjord
+ 1398 utsikt
+ 1121 høydeforskjell
+ 1240 utsiktsplass
+ 1205 utsiktspunkt
+ 936 gjestebrygge
+ 484 båtslipp
+ 34 inngjerdet plass
+ 1392 sjø
+ 557 jaktmuligheter
+ 32 fjellterreng
+ 1386 natur
+ 3087 kulturlandskap
+ 3090 Pilgrimsleden
+ 553 grenser til nasjonalpark
+ 210 nasjonalpark
+ 135 elg
+ 1402 fjell
+ 128 fjell
+ 1239 rasteplass
+ 131 furu
+ 2350 total stigning
+ 133 lyng
+ 924 løvskog
+ 1827 naturreservat
+ 2190 isbre
+ 132 bjørk
+ 925 barskog
+ 33 flere mindre områder
+ 552 høyfjellsplatå
+ 2229 ungdom
+ 2352 fjord
+ 1238 myr
+ 913 tettsted
+ 1798 kyst
+ 134 gras
+ 2227 ulendt
+ 2228 stenete
+ 3377 foss
+ 130 gran
+ 2351 innsjø
+ 2225 grus
+ 912 by
+ 2224 asfalt
+ 1174 bymessig/landsens
+ 3089 liten sti
+ 31 ypperlige leforhold
+ 3088 stor sti
+ 3378 landskapsvernområde
+ 2348 juv
+ 2226 isbre
+ 1833 klima
+ 1834 vær
+
+77 Mat og drikke
+ 1307 catering
+ 2102 takeaway
+ 608 uteservering
+ 1243 vertshus
+ 2124 bordbestilling er nødvendig
+ 1046 frokost
+ 1195 sommerrestaurant
+ 1306 à la carte
+ 587 indisk mat
+ 598 norsk mat
+ 586 kinesisk mat
+ 1577 lokale retter
+ 1225 grill
+ 1346 lunch
+ 2103 middag
+ 1309 kebab
+ 606 pizza
+ 1710 lukkede selskap
+ 1224 husmannskost
+ 1308 dagens
+ 3139 smørbrød
+ 1635 tapas
+ 1372 barnemeny
+ 964 buffé
+ 3455 mineralvann/brus
+ 1993 salg av drikkevarer
+ 3141 Skandinavisk
+ 2125 bordbestilling er ikke nødvendig
+ 597 fisk og skalldyr
+ 1576 tradisjonsmat
+ 582 fransk mat
+ 2120 bryggeri
+ 2112 kaffebar
+ 907 internasjonal
+ 1331 julebord
+ 1021 kontinental frokost
+ 584 japansk mat
+ 1693 sushi
+ 612 thailandsk/vietnamesisk mat
+ 590 italiensk mat
+ 2090 New Scandinavian Cooking
+ 1221 lunch buffet
+ 580 amerikansk
+ 610 spansk mat
+ 599 vegetarisk
+ 607 hamburger
+ 591 meksikansk mat
+ 1222 sommercafé
+ 581 kreolsk mat
+ 1220 salatbord
+ 908 irsk mat
+ 1296 kaffebar
+ 583 gresk mat
+ 1223 pasta
+ 1197 bistro
+ 1024 tilbud om frokost
+ 2110 fast food
+ 2115 vinbar
+ 2106 vinkart
+ 2119 spesiell beliggenhet
+ 2118 bodega
+ 1297 fast food restaurant
+ 1310 selvbetjening
+ 614 tyrkisk mat
+ 3138 julemat
+ 1526 spesialmat finnes
+ 3452 kake
+ 3184 barmeny
+ 2107 gourmet
+ 2104 brunch
+ 2113 konditori
+ 2108 delikatesser
+ 3454 spesialøl
+ 1268 kontinental frokost - gratis
+ 2105 sen åpningstid 23+
+ 2116 strandbar
+ 2111 isbar
+ 3154 økologisk
+
+43 Båter
+ 187 kano
+ 1076 motorbåt
+ 854 dampbåt
+ 855 snekke
+ 185 robåt
+ 189 seilbåt
+ 1139 yacht
+ 1419 båtplass tilgjengelig med bil
+ 2081 båter/robåter
+ 188 kajakk
+ 856 motorbåt (liten)
+ 1416 størrelse på båt
+ 1417 størrelse på motor
+ 1418 avstand til båtplass
+ 1412 påhengsmotor
+ 2082 båter/skonnerter
+ 1415 dieselmotor
+ 1140 jolle
+ 1420 parkering ved båtplass
+ 1414 bensinmotor
+ 191 cabincruser
+ 1413 innenbords motor
+ 192 elvebåt
+ 190 havseiler
+
+115 Avstand
+ 3279 Badestrand
+ 2137 badeplass
+ 2138 butikk
+ 2136 fiske
+ 2873 flyplass
+ 2134 matservering
+ 2871 sentrum
+ 2872 tog
+ 3300 Jaktområde
+ 3313 Teater/Kino/Konsert
+ 3303 Dagligvare
+ 3307 Ridning/Utleie av hest
+ 2135 fotturområde
+ 2140 vinterski - alpint
+ 2349 lengde i km
+ 3308 Shopping
+ 3282 Bar/Diskotek
+ 3301 Kirke
+ 3288 Sykkelutleie
+ 2141 ridning
+ 3293 Fornøyelsespark/Zoo
+ 3281 Bank/Minibank
+ 3287 Båt/kanoutleie
+ 3277 Merkede vandreruter
+ 3302 Kunsthåndtverk
+ 3304 Museum
+ 3291 Fotballbane
+ 2142 isbre
+ 2139 sommerski - alpint
+ 3295 Ferje
+ 3299 Turistbyrå/Infosenter
+ 3306 Restaurant/Cafe/Spisested
+
+7 Camping og hytte
+ 466 campinghytter
+ 475 elektrisitet 220 v
+ 38 elektrisk lys
+ 1106 mikrobølgeovn
+ 757 strøm
+ 343 toalett
+ 1040 vannkran
+ 1558 El-uttak for caravan
+ 1706 grillstue
+ 468 hytter m/dusj/wc
+ 1559 kabel-TV-uttak
+ 41 nedfrysing/kjøleelement
+ 1030 overbygd piknik område
+ 1821 plass for bobil
+ 1196 servicekontor
+ 478 tømmested kjemikalietoalett
+ 1560 tømming mobile/bærbare tanker
+ 692 vaskerom m/varmt og kaldt vann
+ 743 vintercamp
+ 1692 vinterutleie
+ 1272 betjent campingplass
+ 465 caravanplasser
+ 1058 sanitæranlegg
+ 1087 bobil/campingvogn tillatt
+ 1018 campingavgift
+ 18 dusj / kaldt vann
+ 758 innlagt vann
+ 759 sengetøy
+ 853 strømtilkobling
+ 1207 vaskerom
+ 1038 camping tillatt
+ 1274 selvbetjent campingplass
+ 1043 vannpumpe
+ 1292 gruppecampingplass
+ 1388 ikke innlagt vann
+ 1062 strømtilkobling for bobil/campingvogn
+ 975 TV- tilgang
+ 903 utedo
+ 40 norske propanflasker
+ 1085 telting ikke lovlig
+ 1214 klatrestativ
+ 1499 plass til campingvogn
+ 2178 teltplasser
+ 1041 ved
+ 1275 primitiv campingplass
+ 1069 all camping tillatt
+ 1015 ampere 15
+ 1369 elektrisk oppvarming
+ 973 tomter med elektrisitet
+ 469 tømmested/kjemikalie wc
+ 480 seng/rom
+ 1269 ved - gratis
+ 1820 antall teltplasser
+ 1449 støvsuger
+ 476 vanntilkobling
+ 1472 brønn, pumpe, kran ute
+ 1273 delvis betjent campingplass
+ 1270 ved til salgs
+ 1447 håndkle
+ 1293 dagsbruk/piknik område
+ 1300 ovner
+ 1345 rasteplass/hytte
+ 15 stikkontakt
+ 971 antall tomter totalt
+ 477 caravanavløp
+ 3443 privat bad
+ 974 tomter med vanntilgang
+ 940 hjelp til parkering
+ 972 sesongtomter
+ 1088 gjennomkjøringsplasser
+ 1014 ampere 30
+ 1561 gass - salg og etterfylling
+ 2948 bobil ikke tillatt
+ 1016 ampere annen
+ 927 familiecamping - ingen ungdom under 18 år
+ 1070 bare campingvogner
+ 1970 avdeling for bobilcamping
+
+9 MICE Konferansefasiliteter
+ 1603 DVD
+ 345 konferanserom
+ 346 grupperom
+ 1636 antal rom for konferansegjester (overnatting)
+ 1445 maks sitteplasser som bankettsal
+ 1354 maks sitteplasser som kino
+ 1575 AV-utstyr
+ 1097 maks antall konferansedeltagere
+ 739 møte/utstillingsrom
+ 726 flippover
+ 690 kopimaskin
+ 60 lydanlegg
+ 825 mikrofon (trådløs)
+ 55 overhead
+ 53 tv/konferanserom
+ 818 videokanon 800x600
+ 835 whiteboard
+ 1503 antall møterom
+ 1444 maks sitteplasser som klasserom
+ 54 prosjektør
+ 1581 kapasitet kongress
+ 1667 antall deltakere
+ 833 dias rett
+ 832 dias rund
+ 58 filmframviser 35mm
+ 834 filmlerret
+ 384 kassettspiller
+ 56 lysbildeframviser
+ 1505 utstillingsflate/størrelse (kvm)
+ 831 høyttaleranlegg
+ 1466 konferanserom m/høyhastighets internettilgang
+ 827 PC Workstation
+ 1194 tv
+ 689 video
+ 1098 antall personer i største konferanserom
+ 1638 konferansepersonell
+ 697 storskjerm
+ 828 utstyrt kurslederkontor
+ 1645 antall grupperom
+ 819 videokanon 1024x768
+ 1356 bankett
+ 1510 video-, tv- og dataprosjektør
+ 318 kopimaskin
+ 1680 bærbar PC
+ 1690 trådløst internett
+ 1679 printer
+ 1668 antall lokaler
+ 1460 areal
+ 2928 maks sitteplasser i styrerom
+ 826 teleslyngeanlegg
+ 1647 antall .pers i u-sitting
+ 1683 blokk & penner
+ 1689 faks
+ 1682 fargekopieringsmaskin
+ 2153 smart board
+ 1353 klasserom
+ 1355 u-bord
+ 1674 Video/Dataprojektor
+ 1637 totalt antall senger for konferansegjester
+ 1998 møtefaciliteter
+ 2266 amplifier
+ 1673 AV-teknikker
+ 3202 break out
+ 1677 bredbåndstilkobling
+ 1671 CD-spiller
+ 3200 dagslys I lokaler
+ 1670 digital OH-projektor
+ 1678 skanner
+ 1676 videokamera
+ 1675 widescreen TV
+ 1691 ISDN
+ 1669 OH-projektor
+ 1443 maks sitteplasser som auditorium
+ 2201 mellom 1 og 49 personer
+ 2203 mellom 101 og 150 personer
+ 400 krittavle
+ 830 talerstol
+ 2751 Maks kapasitet restaurant
+ 2207 mere enn 1000 personer
+ 1770 største møterom
+ 1440 telekonferanseutstyr tilgjengelig
+ 57 filmframviser 16mm
+ 383 filmframviser 8mm
+ 1441 videokonferanseutstyr tilgjengelig
+ 1439 utleie av audiovisuelt utstyr
+ 1328 høretelefon
+ 2205 mellom 301 og 500 personer
+ 2202 mellom 50 og 100 personer
+ 1686 telefonbooking
+ 1681 datateknikker
+
+10 Annen overnatting
+ 1067 overnatting
+ 64 campingplass
+ 1882 rom inkl. frokost
+ 845 appartements
+ 844 leiligheter
+ 1144 turisthytte
+ 694 hus
+ 1352 rom
+ 969 hytter for booking
+ 693 seter
+ 2179 felles wc og dusj
+ 3126 Lunch - familie
+ 3129 Lunch - grupper
+ 1880 pris inkl. el og varme
+ 2133 Bed & Breakfast
+ 3198 sluttrengjøring inkl.
+ 970 rom/hus/husvogn for booking
+ 3128 Frokost - grupper
+ 3127 Middag - familie
+ 3130 Middag - grupper
+ 1244 rorbu
+
+110 Klassifisering
+ 2126 De Historiske Hotell og Spisesteder
+ 2128 Regional Matkultur
+ 1894 Blått flagg
+ 2185 Norsk Økoturisme
+ 1867 Miljøfyrtårn
+ 1968 Svanen
+ 2121 ISO-14001
+ 2362 Michelin
+ 3131 Kurs Certified
+ 3207 Fisking
+ 2978 Golf
+ 2962 Sykkel
+ 3209 Tilgjengelighet - Enkel tilgang
+ 3208 Vandring
+ 1816 Olavsrosa
+ 1818 Øko-turisme
+ 1812 Bærekraftig Reiseliv
+ 1814 Syklist velkommen
+ 2189 Merking med DNT's røde T-er
+ 1795 Historisk
+ 3074 Sykling
+ 2934 ****
+ 1815 Gardsmathanen
+ 2218 3 stjerner
+ 1908 Stjerneklassifisert
+ 1969 Blomsten
+ 2933 ***
+ 2353 DNT
+ 1829 Fortidsminne
+ 3075 Fishing
+ 2935 *****
+ 2354 Nasjonal standard
+ 1707 Verdensarven
+ 2219 4 stjerner
+ 1937 Unesco
+ 1825 Brunt og hvitt skilt
+ 1813 Arktisk meny
+
+93 Sportsaktiviteter
+ 1232 billøp
+ 2055 terrengsport
+ 278 golf
+ 1234 travløp
+ 810 sykkelveier
+ 1096 minigolf
+ 303 tennis
+ 566 bowling
+ 2052 klatring
+ 322 alpint
+ 891 sykling
+ 337 biljard
+ 647 langrenn
+ 706 fotball
+ 887 strandvolleyball
+ 338 bordtennis
+ 707 friidrett
+ 1233 rallycross
+ 889 bueskyting
+ 888 volleyball
+ 1991 vandreruter
+ 25 ballspill
+ 1564 vannsport
+ 1260 lysløype
+ 1992 sykkelruter
+ 711 turmarsj
+ 1980 mulighet for greenfeespill
+ 1981 mulighet for instruksjon
+ 1988 informasjonstavle
+ 567 squash
+ 2273 bordtenninsbord
+ 2776 crocket
+ 2770 dart
+ 2043 mosjon
+ 2773 trampoline
+ 2057 curling
+ 1659 øvelsesområde
+ 1156 Kubb
+ 901 krokket
+ 890 håndball
+ 267 dykking
+ 434 badminton
+ 292 brettseiling
+ 939 boule
+ 264 skøyteløp
+ 2187 corebar
+ 2046 fitness
+ 1231 innebandy
+ 2188 trimboksing
+ 2006 stupemuligheter
+ 2044 basketball
+ 2051 skateboard
+ 1648 surfing
+ 2783 geocaching
+ 2784 vandring/stavgang
+ 2357 ikke belyst løype
+ 1990 infomrasjonssenter
+ 1563 windsurfing
+ 2356 delvis belyst løype
+ 2003 25 m. Basseng
+ 3010 snorkling
+
+94 Utleie
+ 1916 bil
+ 1017 båtutleie
+ 481 hytter
+ 27 båt
+ 788 fiskeutstyr
+ 795 utstyr seiling
+ 700 kano
+ 682 lavvo (sametelt)
+ 1193 kajakk
+ 792 utstyr kajakk
+ 193 vannski
+ 158 sykkel
+ 846 sykkelhjelm
+ 1131 kjelke
+ 1132 rodler
+ 1133 hytte
+ 789 utstyr fjellklatring
+ 496 langrennsutstyr
+ 1322 golfkøller
+ 1190 sykkelstativ
+ 1600 golfbiler
+ 1321 golfvogner
+ 1255 flytevest
+ 471 telt
+ 2074 bobiler
+ 2076 hester/ponnyer
+ 2075 hester/store hester
+ 1246 lokale
+ 483 pulk
+ 1256 spark
+ 1865 truger
+ 2264 ski
+ 849 sykkelhjelp
+ 2077 sykler/barnesykler
+ 2079 sykler/mountainbikes
+ 1387 tennisbane
+ 683 tennisutstyr
+ 790 utstyr golf
+ 1323 fiskeutstyr
+ 181 lavvo (sametelt) m/ovn
+ 2793 pedalbåt
+ 847 sykkelhenger
+ 1574 snowkiting
+ 685 sykkelbåter
+ 472 caravan
+ 203 seilbrett
+ 2336 skøyter
+ 2078 sykler/tandem
+ 937 seilskole/utleie
+ 796 utleieutstyr vannski
+ 684 minigolfutstyr
+ 1134 dressin
+ 938 dykkerskole/utleie
+ 787 dykkerutstyr
+ 2068 busser
+ 1864 bæremeis
+ 794 utstyr rafting
+ 1633 pedalbiler
+ 1157 kubb
+ 1192 bilbarnestol
+ 2363 gocart
+ 182 militærtelt m/ovn
+ 3036 Busser kan leies med fører
+ 848 motorsykkel
+ 1191 takgrind
+ 3009 scooter
+
+55 Museum, Gallerier og kunsthåndtverk
+ 253 salgsutstilling
+ 255 omvisning etter avtale
+ 1077 museum
+ 1241 bygdegård
+ 753 utstilling
+ 256 omvisning i åpningstiden
+ 876 faste utstillinger
+ 1242 grafikk
+ 1208 malerier
+ 1210 tekstil
+ 669 fotografi
+ 666 malerier
+ 1265 glass
+ 977 keramikk
+ 254 husflidssalg
+ 801 håndverk
+ 387 kunsthåndverk
+ 720 galleri
+ 878 museumsbutikk
+ 799 bildende kunst
+ 875 skiftende utstillinger
+ 805 bøker
+ 755 foredrag
+ 879 foto
+ 877 separatutstillinger
+ 804 skulpturer
+ 667 skulpturer
+ 874 temautstillinger
+ 807 interiør
+ 671 utsalg
+ 662 strikking
+ 663 sølvarbeide
+ 664 treskjæring
+ 1114 museumsjernbane
+ 806 musikk
+ 670 husflidsutstilling
+ 1341 smie
+ 661 veving
+ 803 tekstilkunst
+ 802 husflid
+ 2031 atelier
+ 2837 dagligvarer
+ 963 botanikk
+ 754 demonstrasjoner
+ 808 geologi
+ 2816 sirkusmiljø
+ 2856 teaterhistorie
+ 3055 arkiv
+ 2952 besøkssenter
+ 3056 frilandsmuseum
+ 2836 kulturhistorie
+ 2838 lokalhistorie
+ 3053 middelalder
+ 2028 akvarell
+ 2029 maleri
+ 2032 tegning
+ 2024 brukskunst
+ 1266 skinn
+ 673 ullbearbeiding
+ 2813 biler
+ 2835 kommunikasjon
+ 2834 mopeder
+ 2843 motorsykler
+ 3050 sykler
+ 668 statue
+ 3434 Kultur
+ 2027 smykkefremstilling
+ 2855 sjøfart
+ 2829 handel
+ 2830 Historie
+ 1986 aktiv deltagelse mulig
+ 674 porselensmaling
+ 2845 naturhistorie
+ 2846 naturvitenskap
+ 3062 opplevelsessenter
+ 2817 dagligliv
+ 2860 vikingtiden
+ 2826 foto
+ 3001 planetarium
+
+101 Målgruppe
+ 1521 buss- og gruppearrangement
+ 1517 barn
+ 1519 eldre
+ 1518 ungdom
+ 1822 voksen
+ 2331 funksjonshemmede
+ 2089 familie
+ 3429 Familie med barn
+ 1520 pedagoger
+ 3430 Par
+
+48 Kredittkort
+ 212 Diners Club
+ 213 Eurocard
+ 214 Visa
+ 211 American Express
+ 1001 MasterCard
+ 921 aksepterer kredittkort
+ 1511 JCB
+ 1160 BankAxept
+ 1830 kredittkort aksepteres ikke
+ 2019 Electron
+ 2018 Maestro
+ 1154 elektroniske kort
+ 1155 kontantkort
+ 2020 Accept Card
+ 696 Texkort
+
+103 Handikap
+ 1442 handikapparkering
+ 61 tilrettelagt for bevegelseshemmede
+ 159 handikapvennlig
+ 1488 handikapprom
+ 1105 tilrettelagt for handikappede
+ 1547 førerhund velkommen
+ 2065 rullestolvennlig adgang (rampe)
+ 945 egnet for personer med astma og allergi
+ 1057 tilgjengelig for rullestolbrukere
+ 942 tilrettelagt for blinde/synshemmede
+ 1 handikaptoalett
+ 1059 delvis tilgjengelig for rullestolbrukere
+ 1550 førerhund velkommen, men bare på røykerom
+ 1522 Handikapinfo på VisitOSLO
+ 1060 tilgjengelig for allergikere
+ 1549 førerhund velkommen, men mot ekstra betaling
+ 1551 førerhund ikke velkommen
+ 1548 førerhund velkommen, men ikke i spisesal
+ 1527 handikapptoalett i restaurant
+ 1640 EQUALITY tilgjengelighetsinfo
+ 3026 tilgjengelig for hørselshemmede
+ 1172 rull-inn-dusj for rullestolbrukere
+ 3385 egnet for funksjonshemmede
+ 1171 vaskerom tilrettelagt for rullestolbrukere
+
+97 Sesong
+ 1183 sommer
+ 1807 august
+ 1806 juli
+ 1805 juni
+ 1182 hele året
+ 1184 høst
+ 1185 vinter
+ 1186 vår
+ 1495 sesongåpent
+ 1708 helårsåpent
+ 1095 åpent etter avtale
+ 1809 oktober
+ 1808 september
+ 1804 mai
+ 1835 jul
+ 1709 begrenset åpningstid
+ 1837 påske
+ 1810 november
+ 1803 april
+ 1811 desember
+ 1801 februar
+ 1800 januar
+ 1836 nyttår
+ 1802 mars
+
+85 Dyr/fiske slag
+ 915 husdyr
+ 770 haner/høner
+ 764 hester
+ 769 kaniner
+ 765 kuer
+ 767 sauer
+ 768 geiter
+ 766 griser
+ 762 hund
+ 763 katt
+ 1567 esel
+ 771 gjess
+ 911 påfugler
+ 836 svaner
+ 837 ender
+ 1631 ørret
+ 1500 fisk
+ 1570 reinsdyr
+ 1632 andre
+ 1605 abbor
+ 1611 gjedde
+ 1606 brasse
+ 1615 karpe
+ 1619 mort
+ 1626 sik
+ 1617 laks
+ 3428 Dyr
+ 1490 hjort
+ 1621 regnbueørret
+
+99 Kapasitet
+ 1377 antall senger
+ 1376 antall soverom
+ 1378 antall hytter
+ 1769 antall senger
+ 2209 50 - 100 rom
+ 2941 50-200 personer
+ 1582 totalt antall rom
+ 1851 antall suiter
+ 1850 dobbeltrom
+ 1849 enkeltrom
+ 916 antall personer
+ 1383 antall plasser inne
+ 1382 antall plasser ute
+ 2788 antall rom
+ 2166 antall etasjer
+ 1639 max antall personer i restauranten
+ 1380 antall campingvogn plasser med elektrisk tilkobling
+ 1381 antall caravanplasser
+ 1374 antall WC
+ 1557 antall leiligheter
+ 1379 antall campinghytter
+ 1883 antall hus
+ 2937 10-50 personer
+ 2938 1-10 personer
+ 2939 200-500 personer
+ 1556 antall telt/campingplasser
+ 2193 antall hotellrom
+ 1877 antall sitteplasser
+ 1875 antall personer i største lokale
+ 1914 antall rom med bad og/eller toalett
+ 1463 antall ekstrasenger
+ 1913 antall rom uten bad og/eller toalett
+ 1887 antal leiligheter med bad og toalett
+ 2211 151 - 300 rom
+ 2208 1 - 49 rom
+ 2210 101 - 150 rom
+ 1530 antall plasser
+ 3133 antall dobbeltrom
+ 3134 antall enkeltrom
+ 1900 antall personer i restaurant
+ 1385 antall gjestehavnplasser
+ 1766 antall rorbuer
+ 3085 antal rom med bad
+ 3132 antall familierom
+
+125 Arrangementstyper
+ 1515 Teater
+ 3323 For barn
+ 3412 Natur
+ 3270 Sport
+ 3250 Bedriftsmøter
+ 3273 Viking arrangement
+ 3322 Jul
+ 3325 Festival
+ 3275 Mat
+ 3326 Folkefest
+ 3274 Musikk
+ 3276 Marked
+ 3459 Historie
+ 3255 Utstillinger
+ 3470 Litteratur
+ 3397 Mat
+
+113 Golf
+ 1562 put ball
+ 1051 golfpro
+ 1317 driving range
+ 1318 korthullbane
+ 1320 omkledningsrom
+ 1319 putting green
+ 2874 golfpakker
+ 1261 antall hull
+ 1598 golf 1
+ 1315 gul tee
+ 1316 rød tee
+ 1898 slope for gul tee
+ 1899 slope for rød tee
+ 3148 fotballgolf
+
+112 Behandlingstiilbud
+ 1050 massasje
+ 1961 spa/jacuzzi
+ 1965 dampbad
+ 1952 saunabehandlinger
+ 1939 ansiktsbehandling
+ 1940 aromaterapi
+ 1962 avslappningsområde
+ 1942 innpakninger
+ 1966 kaldtvannsbasseng
+ 1948 massage: helkrops
+ 1950 massage: hodebunn
+ 1943 massage:avspenning
+ 1959 peeling
+ 1964 pool
+ 1963 rekreative omgivelser
+ 1967 tyrkisk bad
+ 1951 manikyr/pedikyr
+ 1944 massage: akutryk
+ 1945 massage: ansikt
+ 1946 massage: aroma
+ 1949 massage:hotstone
+
+123 QualityMark Norway
+ 3172 QualityMark Norway ****
+ 3182 Kurs og konferansehotell
+ 3183 Hotell med miljøfokus
+
+90 Vintersport
+ 1124 aking
+ 1159 alpint
+ 1127 langrenn
+ 1643 ski
+ 781 skitrekk
+ 425 snowboard
+ 783 barnetrekk
+ 774 flombelysning
+ 298 skiskole
+ 1123 snøkanon
+ 300 telemark
+ 772 trekklengde
+ 776 varmestue
+ 179 lysløype
+ 296 skihopping
+ 1126 skøyter
+ 429 half-pipe skiboard
+ 428 skilek
+ 422 slalom
+ 782 stolheis
+ 460 turskiinstruksjon
+ 458 oppkjørte løyper
+ 437 blå løype / lett
+ 436 grønn løype / nybegynner
+ 773 høydeforskjell
+ 438 rød løype / middels vanskelig
+ 439 svart løype / ekspert
+ 178 merkede løyper
+ 180 preparerte løyper
+ 455 oppvarmet skistall
+ 1125 truger
+ 1799 ski inn/ski ut
+ 775 after ski
+ 427 kulekjøring
+ 426 off-piste
+ 432 snowrafting
+ 459 turskiutleie
+ 456 direkte tilgang hotell-
+ 457 avanserte alpinløyper
+ 2132 topptur
+ 423 storslalom
+ 431 freestyle
+ 433 upski
+ 424 utfor
+ 1688 sommerski
+ 2358 ikke preparerte løyper
+ 2131 ekspedisjon
+
+100 Medlem i
+ 1474 Choice Hotels
+ 1855 De historiske
+ 1872 Syklist Velkommen
+ 1852 Thon Hotels
+ 3261 Andre
+ 1480 First Hotels
+ 1870 Den Norske Turistforening
+ 1854 Rica Hotels
+ 1871 Norsk Bygdeturisme- og gardsmat
+ 1866 Norske Vandrerhjem
+ 1853 The Rezidor Hotel Group
+ 1473 Best Western
+ 1479 Romantik Hotels & Restaurants
+ 1476 Scandic Hotels
+ 1832 Bo på gård
+ 2152 Radisson BLU Hotels & Resorts
+
+13 Språk
+ 85 engelsk
+ 87 fransk
+ 86 tysk
+ 82 norsk
+ 843 finsk
+ 89 italiensk
+ 1602 kinesisk
+ 842 portugisisk
+ 90 russisk
+ 88 spansk
+ 840 nederlandsk
+ 84 dansk
+ 83 svensk
+ 841 japansk
+ 3445 Hebraisk
+ 3446 Koreansk
+ 1823 polsk
+
+36 Rabatter
+ 1700 rabatt med Oslo Pass
+ 230 grupperabatt
+ 1699 gratis med Oslo Pass
+ 745 pass/andre rabattordninger
+ 522 medlemsrabatt
+ 229 barnerabatt
+ 824 Bergenskortet
+ 243 barn i foreldres seng
+ 524 Best Western Gullbonus
+ 377 Fjordpass
+ 409 voksen i ekstraseng
+ 1324 familierabatt
+ 1536 NAF
+ 1203 gruppepriser
+ 2186 Lillehammerkortet
+ 1507 NAF Card
+ 1508 Show Your Card
+ 2012 fri entré
+ 528 Ricakortet
+ 1797 DNT- medlemsskap
+ 947 Choice Card
+ 529 Nordisk Hotellpass
+ 1917 Kulturkortet
+ 1482 SCAN+ Hotell Pass
+ 1873 BTkortet
+ 1538 CCI
+ 231 book maks. 24 t. før ank.
+ 1539 ANWB
+ 2330 Festspillkortet
+ 1537 ADAC
+
+63 Skiutleie
+ 497 alpinutstyr
+ 780 snowboardutstyr
+ 779 barneskiutstyr
+ 1694 skiutstyr
+ 447 telemarkutstyr - barn
+ 446 telemarkutstyr - voksne
+ 449 turlangrenn - barn
+ 448 turlangrenn - voksne
+ 443 alpinhjelm - barn
+ 184 alpinutstyr - barn
+ 183 alpinutstyr - voksne
+ 1267 alpinutstyr
+ 451 skistaver
+ 442 slalomski - barn
+ 441 slalomski - voksne
+ 445 slalomstøvler - barn
+ 444 slalomstøvler - voksne
+ 450 monoski
+
+78 Aldersgrense
+ 605 24 år
+ 602 20 år
+ 601 18 år
+ 603 22 år
+ 604 23 år
+ 1462 15 år
+ 1143 12 år
+ 1826 7 år
+ 1141 voksen
+ 1142 barn
+ 600 16 år
+ 1298 for voksne
+ 1227 14 år
+
+114 Atmosfære
+ 2098 avslappet
+ 2099 hyggelig
+ 2094 romantisk
+ 2096 nostalgisk
+ 2095 trendy
+ 2097 eksklusiv
+
+111 Adgang /Tillgang
+ 1301 turstier- merkede
+ 1642 nære sjø/hav
+ 811 merkede løyper- terrengsykling
+ 1927 fra solopgang til solnedgang
+ 1936 drikkevann
+ 1934 plass til bål
+ 1930 fri adgang
+ 2003 25 m basseng
+ 1922 kun etter avtale
+ 1173 eget bad
+ 1923 offentlig tilgjengelig bymiljø
+ 1454 gratis filmkanal
+ 1569 XX
+
+57 Jakt
+ 1148 jakt med guide
+ 440 reinsdyrjakt
+ 280 småviltjakt
+ 310 harejakt
+ 308 rypejakt
+ 315 rådyrjakt
+ 309 storfugljakt
+ 313 elgjakt
+ 1149 jaktkort
+ 316 beverjakt
+ 314 hjortejakt
+ 1130 skytebane
+ 1147 jaktkurser
+ 281 storviltjakt
+ 311 andejakt
+ 1146 gåsejakt
+ 1128 jaktprøve
+ 1150 jegerprøvekurs
+
+119 Nettverk: Vandring - Sykkel - Padling - Ski
+ 3101 Mjøstråkk
+ 3094 Rallarvegen
+ 2360 Nordsjøløype
+ 3104 Vesterålen
+
+109 Gradering
+ 1794 krevende
+ 1793 middels
+ 1796 ekspert
+ 1792 lett
+ 2191 fargegradert turmerking
+ 2355 ikke merket
+ 2359 andre
+
+108 Varighet
+ 1772 1 time
+ 1773 2 timer
+ 1774 3 timer
+ 1893 7 dager
+ 1890 4 dager
+ 1889 3 dager
+ 1886 1 dag
+ 1776 5 timer
+ 1775 4 timer
+ 1791 1 uke
+ 1891 5 dager
+ 1771 0,5 timer
+ 1777 6 timer
+ 2151 flere dager
+ 1779 8 timer
+ 1892 6 dager
+ 1790 7 netter
+ 1888 2 dager
+ 1778 7 timer
+ 1786 3 netter
+ 1780 9 timer
+ 1787 4 netter
+ 1781 10 timer
+ 1784 1 natt
+ 1782 11 timer
+ 1783 12 timer
+ 1789 6 netter
+ 1785 2 netter
+ 1788 5 netter
+
+106 Cruise havn
+ 1761 reisetid til flyplass
+ 1757 strømtilgang på kaien
+ 1753 vann forsyning
+ 1751 rullestol tilgang
+
+121 Tema
+ 3122 Aktiv ferie
+ 3109 Naturopplevelser
+ 3117 Kultur og historie
+ 3115 For hele familien
+ 3119 Badeliv
+ 3111 Golf
+ 3108 Kunst
+ 3216 Sport
+ 3118 Lokale smaksopplevelser
+ 3218 Kultur/Kunst
+ 3215 Miljø/Klima/Energi
+
+117 Deltagere må ta med
+ 2256 kniv
+ 2247 hjelm
+ 2241 fjellsko
+ 2236 hansker/votter
+ 2234 klær
+ 2246 solbriller
+ 2261 solkrem
+ 2257 termos
+ 2238 vanntett tøy
+ 2235 varmt tøy
+ 2237 vindtett tøy
+ 2254 badetøy
+ 2255 ryggsekk
+ 2252 vannflaske
+ 2250 lakenpose
+ 2245 sovepose
+ 2240 gode spasersko
+ 2253 liggeunderlag
+ 2249 lommelykt
+ 2248 kikkert
+ 2243 utstyr
+ 2251 myggbeskyttelse
+ 2239 sko
+
+126 Ikke i bruk
+ 1090 boblebad
+ 996 fax
+ 1290 stier for ridning
+ 1294 PC vennlig rom
+
+116 Sertifikater
+ 2233 fiskekort
+
+124 Møteplanlegger
+ 3238 AV -utstyr
+ 3232 Administrasjon av utstilling
+
+128 Feel like
+ 3426 Aktiv
+ 3418 Ute
+
+98 Byttedag
+ 1338 fredag
+ 1340 søndag
+ 1339 lørdag
+ 1337 torsdag
+
+120 Klassifisering Camping
+ 3070 5 stjerner
+
+118 Søkebyer (visitdenmark.com)
+ 2369 Arrild
+
+127 NOT in use !
+ 1257 x motorvarmer
+ 2025 XXKeramikk
+ 1151 x åpent etter avtale
+
+102 Spesial ( Ikke bruk uten avtale med tellus.)
+ 1858 Booking
+ 1541 Spesial 2 NO
+ 1542 Spesial 3 NO
+ 1546 Spesial 7 NO
+ 1572 Spesial 8 NO
+ 1859 Information
+
+15 Land
+ 92 Norge
+
+12 Filmgenre
+ 1650 dokumentar
+ 858 norsk
+
+1 Generelle fasiliteter 
+ 1363 brygge
+ 1554 havsutsikt
+ 1329 Internett
+ 1189 Uteplass
+
+9 MICE Konferansefasiliteter  
+ 1998 Møtefaciliteter
+

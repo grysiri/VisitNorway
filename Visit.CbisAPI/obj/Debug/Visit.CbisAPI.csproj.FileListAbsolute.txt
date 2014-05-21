@@ -1,0 +1,17 @@
+C:\Users\christina.kihlstrom\Documents\Datamodeller\Visit.CbisAPI\Visit.CbisAPI\bin\Debug\Visit.CbisAPI.dll.config
+C:\Users\christina.kihlstrom\Documents\Datamodeller\Visit.CbisAPI\Visit.CbisAPI\bin\Debug\Visit.CbisAPI.dll
+C:\Users\christina.kihlstrom\Documents\Datamodeller\Visit.CbisAPI\Visit.CbisAPI\bin\Debug\Visit.CbisAPI.pdb
+C:\Users\christina.kihlstrom\Documents\Datamodeller\Visit.CbisAPI\Visit.CbisAPI\obj\Debug\Visit.CbisAPI.csprojResolveAssemblyReference.cache
+C:\Users\christina.kihlstrom\Documents\Datamodeller\Visit.CbisAPI\Visit.CbisAPI\obj\Debug\Visit.CbisAPI.dll
+C:\Users\christina.kihlstrom\Documents\Datamodeller\Visit.CbisAPI\Visit.CbisAPI\obj\Debug\Visit.CbisAPI.pdb
+C:\Users\christina.kihlstrom\Documents\visitnorway\Visit.CbisAPI\bin\Debug\Visit.CbisAPI.dll.config
+C:\Users\christina.kihlstrom\Documents\visitnorway\Visit.CbisAPI\bin\Debug\Visit.CbisAPI.dll
+C:\Users\christina.kihlstrom\Documents\visitnorway\Visit.CbisAPI\bin\Debug\Visit.CbisAPI.pdb
+C:\Users\christina.kihlstrom\Documents\visitnorway\Visit.CbisAPI\obj\Debug\Visit.CbisAPI.csprojResolveAssemblyReference.cache
+C:\Users\christina.kihlstrom\Documents\visitnorway\Visit.CbisAPI\obj\Debug\Visit.CbisAPI.dll
+C:\Users\christina.kihlstrom\Documents\visitnorway\Visit.CbisAPI\obj\Debug\Visit.CbisAPI.pdb
+C:\Users\gs.eggen\Documents\VSM\Visit.CbisAPI\bin\Debug\Visit.CbisAPI.dll.config
+C:\Users\gs.eggen\Documents\VSM\Visit.CbisAPI\bin\Debug\Visit.CbisAPI.dll
+C:\Users\gs.eggen\Documents\VSM\Visit.CbisAPI\bin\Debug\Visit.CbisAPI.pdb
+C:\Users\gs.eggen\Documents\VSM\Visit.CbisAPI\obj\Debug\Visit.CbisAPI.dll
+C:\Users\gs.eggen\Documents\VSM\Visit.CbisAPI\obj\Debug\Visit.CbisAPI.pdb

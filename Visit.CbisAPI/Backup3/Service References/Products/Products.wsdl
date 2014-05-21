@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://api.cbis.citybreak.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://api.cbis.citybreak.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://api.cbis.citybreak.com/">
+      <s:element name="ListAll">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="categoryId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="templateId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageOffset" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="itemsPerPage" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="filter" type="tns:ProductFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProductFilter">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ArenaIds" type="tns:ArrayOfInt" />
+          <s:element minOccurs="0" maxOccurs="1" name="GeoNodeIds" type="tns:ArrayOfInt" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="FreeText" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Highlights" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrderBy" type="tns:OrderBy" />
+          <s:element minOccurs="1" maxOccurs="1" name="SortOrder" type="tns:SortOrder" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaxLatitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="MinLatitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaxLongitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="MinLongitude" nillable="true" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="InterestsIds" type="tns:ArrayOfInt" />
+          <s:element minOccurs="1" maxOccurs="1" name="SubCategoryId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductType" nillable="true" type="tns:ProductType" />
+          <s:element minOccurs="1" maxOccurs="1" name="WithOccasionsOnly" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="MultiAttributes" type="tns:ArrayOfMultiAttributeSearch" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExcludeProductsWithoutOccasions" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExcludeProductsNotInCurrentLanguage" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IncludeArchivedProducts" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IncludeInactiveProducts" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="OrderBy">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Name" />
+          <s:enumeration value="Date" />
+          <s:enumeration value="Arena" />
+          <s:enumeration value="Area" />
+          <s:enumeration value="Interests" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="SortOrder">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Ascending" />
+          <s:enumeration value="Descending" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="ProductType">
+        <s:list>
+          <s:simpleType>
+            <s:restriction base="s:string">
+              <s:enumeration value="All" />
+              <s:enumeration value="Product" />
+              <s:enumeration value="Arena" />
+              <s:enumeration value="ProductAndArena" />
+              <s:enumeration value="Location" />
+              <s:enumeration value="ProductLocation" />
+              <s:enumeration value="LocationArena" />
+              <s:enumeration value="ProductLocationArena" />
+            </s:restriction>
+          </s:simpleType>
+        </s:list>
+      </s:simpleType>
+      <s:complexType name="ArrayOfMultiAttributeSearch">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MultiAttributeSearch" nillable="true" type="tns:MultiAttributeSearch" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MultiAttributeSearch">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AttributeId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MultiAttributeIds" type="tns:ArrayOfInt" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListAllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListAllResult" type="tns:SearchResultOfProduct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SearchResultOfProduct">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TotalResults" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="TotalPages" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="PageIndex" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="PageSize" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="TrackingPixelUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Items" type="tns:ArrayOfProduct" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfProduct">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Product" nillable="true" type="tns:Product" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Product">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SystemName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TrackingPixelUrl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UrlName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ForeignProductId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CitybreakPackageId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrganizationId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Version" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TemplateId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Image" type="tns:MediaObject" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:ProductStatus" />
+          <s:element minOccurs="1" maxOccurs="1" name="PublishedDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="RevisionDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExpirationDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Relevance" type="tns:Relevance" />
+          <s:element minOccurs="1" maxOccurs="1" name="ParentProductId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductType" type="tns:ProductType" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsHighlight" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Attributes" type="tns:ArrayOfAttributeData" />
+          <s:element minOccurs="0" maxOccurs="1" name="Categories" type="tns:ArrayOfCategory" />
+          <s:element minOccurs="0" maxOccurs="1" name="GeoNode" type="tns:GeoNode" />
+          <s:element minOccurs="0" maxOccurs="1" name="Occasions" type="tns:ArrayOfOccasionObject" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MediaObject">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="MediaId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MediaType" type="tns:MediaTypes" />
+          <s:element minOccurs="0" maxOccurs="1" name="Url" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Width" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Height" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Keywords" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProducedBy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CopyrightBy" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="MediaTypes">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Image" />
+          <s:enumeration value="SagaStream" />
+          <s:enumeration value="Youtube" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="ProductStatus">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Active" />
+          <s:enumeration value="Inactive" />
+          <s:enumeration value="Draft" />
+          <s:enumeration value="WaitingForApproval" />
+          <s:enumeration value="Declined" />
+          <s:enumeration value="AutoApproved" />
+          <s:enumeration value="ManuallyApproved" />
+          <s:enumeration value="PendingPublish" />
+          <s:enumeration value="Archived" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="Relevance">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Local" />
+          <s:enumeration value="Regional" />
+          <s:enumeration value="National" />
+          <s:enumeration value="International" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfAttributeData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AttributeData" nillable="true" type="tns:AttributeData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AttributeData">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AttributeId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MetaType" type="tns:MetaType" />
+          <s:element minOccurs="0" maxOccurs="1" name="Value" type="tns:ValueBase" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrganizationId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Version" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Language" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="MetaType">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Int" />
+          <s:enumeration value="SmallInt" />
+          <s:enumeration value="Boolean" />
+          <s:enumeration value="String" />
+          <s:enumeration value="Double" />
+          <s:enumeration value="DateTime" />
+          <s:enumeration value="Object" />
+          <s:enumeration value="Occasions" />
+          <s:enumeration value="MultiAttribute" />
+          <s:enumeration value="LocationDistances" />
+          <s:enumeration value="Media" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ValueBase" />
+      <s:complexType name="Occasion">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ValueBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Occasions" type="tns:ArrayOfOccasionObject" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfOccasionObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OccasionObject" nillable="true" type="tns:OccasionObject" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OccasionObject">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AttributeId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrganizationId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartTime" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndTime" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ValidDays" type="tns:WeekDays" />
+          <s:element minOccurs="1" maxOccurs="1" name="ArenaId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArenaName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArenaImage" type="tns:MediaObject" />
+          <s:element minOccurs="1" maxOccurs="1" name="EntryTime" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="WeekDays">
+        <s:list>
+          <s:simpleType>
+            <s:restriction base="s:string">
+              <s:enumeration value="Monday" />
+              <s:enumeration value="Tuesday" />
+              <s:enumeration value="Wednesday" />
+              <s:enumeration value="Thursday" />
+              <s:enumeration value="Friday" />
+              <s:enumeration value="Saturday" />
+              <s:enumeration value="Sunday" />
+            </s:restriction>
+          </s:simpleType>
+        </s:list>
+      </s:simpleType>
+      <s:complexType name="Media">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ValueBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="MediaList" type="tns:ArrayOfMediaObject" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfMediaObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MediaObject" nillable="true" type="tns:MediaObject" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Value">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ValueBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Data" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="MultiAttribute">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ValueBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Values" type="tns:ArrayOfMultiAttributeObject" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfMultiAttributeObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MultiAttributeObject" nillable="true" type="tns:MultiAttributeObject" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MultiAttributeObject">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AttributeId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProductId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrganizationId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MultiAttributeId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MetaType" type="tns:MetaType" />
+          <s:element minOccurs="0" maxOccurs="1" name="Value" type="tns:ValueBase" />
+          <s:element minOccurs="1" maxOccurs="1" name="Language" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Location">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ValueBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="LocationDistance" type="tns:ArrayOfLocationObject" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfLocationObject">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LocationObject" nillable="true" type="tns:LocationObject" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LocationObject">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ArenaId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArenaName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ArenaImage" type="tns:MediaObject" />
+          <s:element minOccurs="1" maxOccurs="1" name="Unit" type="tns:DistanceUnits" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnitType" type="tns:DistanceUnitTypes" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnitValue" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="DistanceUnits">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Minutes" />
+          <s:enumeration value="Kilometers" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="DistanceUnitTypes">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Walk" />
+          <s:enumeration value="PublicTransportation" />
+          <s:enumeration value="Taxi" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfCategory">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Category" nillable="true" type="tns:Category" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Category">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrganizationId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DefaultTemplateId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:CategoryStatus" />
+          <s:element minOccurs="1" maxOccurs="1" name="ParentCategoryId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DisplayOrder" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="CategoryStatus">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Active" />
+          <s:enumeration value="Inactive" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="GeoNode">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ParentId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OrgId" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListAllWithImagesFirst">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="categoryId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="templateId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageOffset" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="itemsPerPage" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="filter" type="tns:ProductFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListAllWithImagesFirstResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListAllWithImagesFirstResult" type="tns:SearchResultOfProduct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProductsByTemplate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="templateId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="categoryId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProductDigest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Attributes" type="tns:ArrayOfInformationData" />
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfInformationData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="InformationData" nillable="true" type="tns:InformationData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InformationData">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AttributeId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MetaType" type="tns:MetaType" />
+          <s:element minOccurs="0" maxOccurs="1" name="Value" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ProductAttribute">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="MultiAttributeId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MetaType" type="tns:MetaType" />
+          <s:element minOccurs="1" maxOccurs="1" name="Checked" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="AttributeId" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MediaRef">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Keywords" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MediaType" type="tns:MediaTypes" />
+          <s:element minOccurs="1" maxOccurs="1" name="Width" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Height" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="MediaUrl" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Dimension" type="tns:MediaDimensions" />
+          <s:element minOccurs="1" maxOccurs="1" name="ImageType" type="tns:ImageTypes" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="MediaDimensions">
+        <s:restriction base="s:string">
+          <s:enumeration value="Auto" />
+          <s:enumeration value="OneByOne" />
+          <s:enumeration value="OneByTwo" />
+          <s:enumeration value="TwoByOne" />
+          <s:enumeration value="FiveByOne" />
+          <s:enumeration value="EightByFive" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="ImageTypes">
+        <s:restriction base="s:string">
+          <s:enumeration value="Unknown" />
+          <s:enumeration value="Image" />
+          <s:enumeration value="Logo" />
+          <s:enumeration value="PlanDrawing" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfMediaRef">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MediaRef" nillable="true" type="tns:MediaRef" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfProductAttribute">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductAttribute" nillable="true" type="tns:ProductAttribute" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfProductDigest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductDigest" nillable="true" type="tns:ProductDigest" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetProductsByTemplateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProductsByTemplateResult" type="tns:ArrayOfProductDigest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WithIds">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ids" type="tns:ArrayOfInt" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageOffset" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="itemsPerPage" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WithIdsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WithIdsResult" type="tns:SearchResultOfProduct" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListIds">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="categoryId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="filter" type="tns:ProductFilter" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProductMapItem">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ProductId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CitybreakId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PackageId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Longitude" nillable="true" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Latitude" nillable="true" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfProductMapItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductMapItem" nillable="true" type="tns:ProductMapItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ListIdsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListIdsResult" type="tns:ArrayOfProductMapItem" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUpdateInformation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ProductUpdate">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ProductId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastUpdated" nillable="true" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfProductUpdate">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductUpdate" nillable="true" type="tns:ProductUpdate" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUpdateInformationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUpdateInformationResult" type="tns:ArrayOfProductUpdate" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetById">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="productId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="templateId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByIdResult" type="tns:Product" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByForeignId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="citybreakId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="templateId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByForeignIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByForeignIdResult" type="tns:Product" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByUrlName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="languageId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="urlName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="templateId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetByUrlNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetByUrlNameResult" type="tns:Product" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGeoTree">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="apiKey" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="language" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TreeOfGeoNode">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Nodes" type="tns:ArrayOfTreeNodeOfGeoNode" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTreeNodeOfGeoNode">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TreeNodeOfGeoNode" nillable="true" type="tns:TreeNodeOfGeoNode" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TreeNodeOfGeoNode">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="tns:GeoNode" />
+          <s:element minOccurs="0" maxOccurs="1" name="Children" type="tns:ArrayOfTreeNodeOfGeoNode" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetGeoTreeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGeoTreeResult" type="tns:TreeOfGeoNode" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ListAllSoapIn">
+    <wsdl:part name="parameters" element="tns:ListAll" />
+  </wsdl:message>
+  <wsdl:message name="ListAllSoapOut">
+    <wsdl:part name="parameters" element="tns:ListAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListAllWithImagesFirstSoapIn">
+    <wsdl:part name="parameters" element="tns:ListAllWithImagesFirst" />
+  </wsdl:message>
+  <wsdl:message name="ListAllWithImagesFirstSoapOut">
+    <wsdl:part name="parameters" element="tns:ListAllWithImagesFirstResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProductsByTemplateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProductsByTemplate" />
+  </wsdl:message>
+  <wsdl:message name="GetProductsByTemplateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProductsByTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="WithIdsSoapIn">
+    <wsdl:part name="parameters" element="tns:WithIds" />
+  </wsdl:message>
+  <wsdl:message name="WithIdsSoapOut">
+    <wsdl:part name="parameters" element="tns:WithIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListIdsSoapIn">
+    <wsdl:part name="parameters" element="tns:ListIds" />
+  </wsdl:message>
+  <wsdl:message name="ListIdsSoapOut">
+    <wsdl:part name="parameters" element="tns:ListIdsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUpdateInformationSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUpdateInformation" />
+  </wsdl:message>
+  <wsdl:message name="GetUpdateInformationSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUpdateInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetById" />
+  </wsdl:message>
+  <wsdl:message name="GetByIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByForeignIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByForeignId" />
+  </wsdl:message>
+  <wsdl:message name="GetByForeignIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByForeignIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetByUrlNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetByUrlName" />
+  </wsdl:message>
+  <wsdl:message name="GetByUrlNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetByUrlNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGeoTreeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGeoTree" />
+  </wsdl:message>
+  <wsdl:message name="GetGeoTreeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGeoTreeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ProductsSoap">
+    <wsdl:operation name="ListAll">
+      <wsdl:input message="tns:ListAllSoapIn" />
+      <wsdl:output message="tns:ListAllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListAllWithImagesFirst">
+      <wsdl:input message="tns:ListAllWithImagesFirstSoapIn" />
+      <wsdl:output message="tns:ListAllWithImagesFirstSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductsByTemplate">
+      <wsdl:input message="tns:GetProductsByTemplateSoapIn" />
+      <wsdl:output message="tns:GetProductsByTemplateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WithIds">
+      <wsdl:input message="tns:WithIdsSoapIn" />
+      <wsdl:output message="tns:WithIdsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListIds">
+      <wsdl:input message="tns:ListIdsSoapIn" />
+      <wsdl:output message="tns:ListIdsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUpdateInformation">
+      <wsdl:input message="tns:GetUpdateInformationSoapIn" />
+      <wsdl:output message="tns:GetUpdateInformationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetById">
+      <wsdl:input message="tns:GetByIdSoapIn" />
+      <wsdl:output message="tns:GetByIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByForeignId">
+      <wsdl:input message="tns:GetByForeignIdSoapIn" />
+      <wsdl:output message="tns:GetByForeignIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByUrlName">
+      <wsdl:input message="tns:GetByUrlNameSoapIn" />
+      <wsdl:output message="tns:GetByUrlNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoTree">
+      <wsdl:input message="tns:GetGeoTreeSoapIn" />
+      <wsdl:output message="tns:GetGeoTreeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ProductsSoap" type="tns:ProductsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListAll">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/ListAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllWithImagesFirst">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/ListAllWithImagesFirst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductsByTemplate">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetProductsByTemplate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WithIds">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/WithIds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListIds">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/ListIds" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUpdateInformation">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetUpdateInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetById">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByForeignId">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetByForeignId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByUrlName">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetByUrlName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoTree">
+      <soap:operation soapAction="http://api.cbis.citybreak.com/GetGeoTree" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ProductsSoap12" type="tns:ProductsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListAll">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/ListAll" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListAllWithImagesFirst">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/ListAllWithImagesFirst" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProductsByTemplate">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetProductsByTemplate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WithIds">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/WithIds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListIds">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/ListIds" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUpdateInformation">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetUpdateInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetById">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByForeignId">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetByForeignId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByUrlName">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetByUrlName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoTree">
+      <soap12:operation soapAction="http://api.cbis.citybreak.com/GetGeoTree" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Products">
+    <wsdl:port name="ProductsSoap" binding="tns:ProductsSoap">
+      <soap:address location="http://api.info.citybreak.com/vb3/Products.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ProductsSoap12" binding="tns:ProductsSoap12">
+      <soap12:address location="http://api.info.citybreak.com/vb3/Products.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
